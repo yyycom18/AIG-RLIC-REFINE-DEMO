@@ -72,10 +72,11 @@ def main():
             st.warning("Run `python fetch_data.py` then `python backtest.py` to generate backtest results.")
             return
 
-        # Check if this is placeholder data (no months in any quadrant)
+        # Placeholder vs real: use metadata.is_real_data when present, else infer from total_months
         monthly_quad = bt.get("monthly_by_quadrant") or []
         total_months = sum(q.get("n_months", 0) for q in monthly_quad)
-        is_placeholder = total_months == 0
+        is_real_data = bt.get("metadata", {}).get("is_real_data", False)
+        is_placeholder = not is_real_data
         if is_placeholder:
             st.info("**Placeholder data.** Return and drawdown show **—** (not 0). For full results: run `python fetch_data.py` then `python backtest.py` locally, commit `outputs/backtest_results.json`, and push to refresh this app.")
 
@@ -83,12 +84,12 @@ def main():
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
 
         def _fmt(val, as_pct=True):
-            """Show '—' for placeholder zeros so tables don't look like real data."""
+            """Show '—' only for placeholder zeros; for real data always show actual values."""
             if is_placeholder and (val == 0 or val == 0.0):
                 return "—"
             return f"{round(val * 100, 2)}%" if as_pct else round(val * 100, 2)
 
-        # Monthly by quadrant: table of avg return and avg drawdown per sector
+        # Monthly by quadrant: table of avg return, avg drawdown, and max drawdown (if present)
         st.subheader("1. Monthly: Sector performance by quadrant")
         monthly_quad = bt.get("monthly_by_quadrant") or []
         for item in monthly_quad:
@@ -98,10 +99,11 @@ def main():
             with st.expander(f"**{q}** — {label} ({item.get('n_months', 0)} months)"):
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
-                df = pd.DataFrame({
-                    "Avg monthly return (%)": [_fmt(ret.get(t, 0)) for t in ret],
-                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd],
-                }, index=list(ret.keys()))
+                max_dd = item.get("max_drawdown") or {}
+                cols = {"Avg monthly return (%)": [_fmt(ret.get(t, 0)) for t in ret], "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd]}
+                if max_dd:
+                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
+                df = pd.DataFrame(cols, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
                 fav = bt.get("monthly_favorite_unfavorite") or {}
                 fav_q = fav.get(q, {})
@@ -126,10 +128,11 @@ def main():
             with st.expander(f"**{q}** — {label} ({item.get('n_quarters', 0)} quarters)"):
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
-                df = pd.DataFrame({
-                    "Avg quarterly return (%)": [_fmt(ret.get(t, 0)) for t in ret],
-                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd],
-                }, index=list(ret.keys()))
+                max_dd = item.get("max_drawdown") or {}
+                cols = {"Avg quarterly return (%)": [_fmt(ret.get(t, 0)) for t in ret], "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd]}
+                if max_dd:
+                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
+                df = pd.DataFrame(cols, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
                 fav = bt.get("quarterly_favorite_unfavorite") or {}
                 fav_q = fav.get(q, {})

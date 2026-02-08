@@ -1,36 +1,46 @@
 {
+  "metadata": {
+    "generated_at": "placeholder",
+    "data_sources": "none",
+    "data_range": {"start": null, "end": null},
+    "is_real_data": false
+  },
   "rolling_window_months": 60,
   "monthly_by_quadrant": [
     {
       "quadrant": "Low_Easy",
       "n_months": 0,
       "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
     },
     {
       "quadrant": "Low_Tight",
       "n_months": 0,
       "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
     },
     {
       "quadrant": "High_Easy",
       "n_months": 0,
       "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
     },
     {
       "quadrant": "High_Tight",
       "n_months": 0,
       "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
     }
   ],
   "quarterly_by_quadrant": [
-    {"quadrant": "Low_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "Low_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "High_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "High_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}}
+    {"quadrant": "Low_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
+    {"quadrant": "Low_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
+    {"quadrant": "High_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
+    {"quadrant": "High_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}}
   ],
   "monthly_favorite_unfavorite": {
     "Low_Easy": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
