@@ -22,6 +22,11 @@ env/
 .env
 .env.local
 
+# API keys (never commit)
+FRED_API_KEY.txt
+.env
+.env.local
+
 # IDE / OS
 .idea/
 .vscode/

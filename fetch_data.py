@@ -13,15 +13,16 @@ import yfinance as yf
 
 import config
 
-# Try to load FRED key from Doc/FRED_API_KEY.txt or env
+# Try to load FRED key: env FRED_API_KEY, then project FRED_API_KEY.txt, then Doc/FRED_API_KEY.txt
 def _get_fred_key():
     key = os.getenv("FRED_API_KEY")
     if key:
         return key.strip()
-    if config.DOC_FRED_KEY.exists():
-        key = config.DOC_FRED_KEY.read_text().strip()
-        if key:
-            return key
+    for path in (config.FRED_KEY_FILE, config.DOC_FRED_KEY):
+        if path.exists():
+            key = path.read_text().strip()
+            if key and not key.startswith("paste") and "your" not in key.lower():
+                return key
     return None
 
 

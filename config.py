@@ -8,7 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 OUTPUTS_DIR = BASE_DIR / "outputs"
 
-# FRED API key: Doc/FRED_API_KEY.txt (workspace) or env FRED_API_KEY
+# FRED API key: project FRED_API_KEY.txt (gitignored), or Doc/FRED_API_KEY.txt, or env FRED_API_KEY
+FRED_KEY_FILE = BASE_DIR / "FRED_API_KEY.txt"
 DOC_FRED_KEY = BASE_DIR.parent / "Doc" / "FRED_API_KEY.txt"
 
 # Data range
