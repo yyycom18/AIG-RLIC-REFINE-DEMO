@@ -1,0 +1,11 @@
+In GitHub Desktop you must open THIS folder (AIG-RLIC-REFINE-DEMO), not the parent "Cursor" folder.
+
+Correct path to add:
+  C:\Users\user\Desktop\Cursor\AIG-RLIC-REFINE-DEMO
+
+Steps:
+1. In GitHub Desktop: File → Remove (remove the current "Cursor" repo from the list).
+2. File → Add local repository.
+3. Click "Choose..." and go to the folder that CONTAINS this file (AIG-RLIC-REFINE-DEMO).
+4. Click "Add repository". You should then see 1 commit and no "AIG-RLIC-REFINE-DEMO/" untracked.
+5. Push origin to publish.
