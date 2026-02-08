@@ -66,6 +66,12 @@ def main():
             st.warning("Run `python fetch_data.py` then `python backtest.py` to generate backtest results.")
             return
 
+        # Check if this is placeholder data (no months in any quadrant)
+        monthly_quad = bt.get("monthly_by_quadrant") or []
+        total_months = sum(q.get("n_months", 0) for q in monthly_quad)
+        if total_months == 0:
+            st.info("**Placeholder data.** For full results: run `python fetch_data.py` then `python backtest.py` locally, commit `outputs/backtest_results.json`, and push to refresh this app.")
+
         window = bt.get("rolling_window_months", 60)
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
 

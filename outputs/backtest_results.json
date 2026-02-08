@@ -1,0 +1,50 @@
+{
+  "rolling_window_months": 60,
+  "monthly_by_quadrant": [
+    {
+      "quadrant": "Low_Easy",
+      "n_months": 0,
+      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+    },
+    {
+      "quadrant": "Low_Tight",
+      "n_months": 0,
+      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+    },
+    {
+      "quadrant": "High_Easy",
+      "n_months": 0,
+      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+    },
+    {
+      "quadrant": "High_Tight",
+      "n_months": 0,
+      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
+      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+    }
+  ],
+  "quarterly_by_quadrant": [],
+  "monthly_favorite_unfavorite": {
+    "Low_Easy": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
+    "Low_Tight": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
+    "High_Easy": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
+    "High_Tight": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []}
+  },
+  "quarterly_favorite_unfavorite": {},
+  "quadrant_history_monthly": [],
+  "quadrant_history_quarterly": [],
+  "current_regime": {
+    "date": "2025-12-31",
+    "VIX_ratio": 0.95,
+    "HY_IG_spread": 3.5,
+    "VIX_class": "Low",
+    "HYIG_class": "Easy",
+    "Quadrant": "Low_Easy",
+    "QuadrantLabel": "Stable expansion (Risk-on)",
+    "threshold_VIX_median": 1.0,
+    "threshold_HY_IG_median": 4.0
+  }
+}

@@ -69,4 +69,4 @@ git branch -M main
 git push -u origin main
 ```
 
-The `.gitignore` excludes `data/*.csv`, `data/*.json`, and `outputs/*.json` so the repo stays small and pushable. After clone, run `fetch_data.py` and `backtest.py` to generate them locally.
+The repo includes a **placeholder** `outputs/backtest_results.json` so the Streamlit app loads on first deploy. For **full backtest results**: run `fetch_data.py` and `backtest.py` locally (with FRED API key), then commit `outputs/backtest_results.json` and push so the app shows real data. The `.gitignore` allows that file; other `data/*` and `outputs/*` files stay ignored to keep the repo small.
