@@ -1,3 +1,6 @@
+# Avoid accidental nested folder with same name (causes "Untracked: AIG-RLIC-REFINE-DEMO/")
+/AIG-RLIC-REFINE-DEMO/
+
 # Data and outputs – keep repo small for push (run fetch_data.py & backtest.py after clone)
 data/*.csv
 data/*.json
