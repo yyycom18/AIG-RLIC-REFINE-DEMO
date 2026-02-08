@@ -75,11 +75,18 @@ def main():
         # Check if this is placeholder data (no months in any quadrant)
         monthly_quad = bt.get("monthly_by_quadrant") or []
         total_months = sum(q.get("n_months", 0) for q in monthly_quad)
-        if total_months == 0:
+        is_placeholder = total_months == 0
+        if is_placeholder:
             st.info("**Placeholder data.** For full results: run `python fetch_data.py` then `python backtest.py` locally, commit `outputs/backtest_results.json`, and push to refresh this app.")
 
         window = bt.get("rolling_window_months", 60)
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
+
+        def _fmt(val, as_pct=True):
+            """Show '—' for placeholder zeros so tables don't look like real data."""
+            if is_placeholder and (val == 0 or val == 0.0):
+                return "—"
+            return f"{round(val * 100, 2)}%" if as_pct else round(val * 100, 2)
 
         # Monthly by quadrant: table of avg return and avg drawdown per sector
         st.subheader("1. Monthly: Sector performance by quadrant")
@@ -92,8 +99,8 @@ def main():
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
                 df = pd.DataFrame({
-                    "Avg monthly return (%)": [round(ret.get(t, 0) * 100, 2) for t in ret],
-                    "Avg drawdown (%)": [round(dd.get(t, 0) * 100, 2) for t in dd],
+                    "Avg monthly return (%)": [_fmt(ret.get(t, 0)) for t in ret],
+                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd],
                 }, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
                 fav = bt.get("monthly_favorite_unfavorite") or {}
@@ -111,12 +118,14 @@ def main():
         quarterly_quad = bt.get("quarterly_by_quadrant") or []
         for item in quarterly_quad:
             q = item.get("quadrant", "")
-            with st.expander(f"**{q}** ({item.get('n_quarters', 0)} quarters)"):
+            parts = q.split("_")
+            label = config.QUADRANTS.get((parts[0], parts[1]), q) if len(parts) >= 2 else q
+            with st.expander(f"**{q}** — {label} ({item.get('n_quarters', 0)} quarters)"):
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
                 df = pd.DataFrame({
-                    "Avg quarterly return (%)": [round(ret.get(t, 0) * 100, 2) for t in ret],
-                    "Avg drawdown (%)": [round(dd.get(t, 0) * 100, 2) for t in dd],
+                    "Avg quarterly return (%)": [_fmt(ret.get(t, 0)) for t in ret],
+                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd],
                 }, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
                 fav = bt.get("quarterly_favorite_unfavorite") or {}
@@ -128,6 +137,8 @@ def main():
         # Quadrant history over time (chart)
         st.subheader("3. Quadrant history (monthly)")
         hist = bt.get("quadrant_history_monthly") or []
+        if not hist:
+            st.caption("No quadrant history in placeholder data. Run `python backtest.py` for the time series chart.")
         if hist:
             df_h = pd.DataFrame(hist)
             if "date" in df_h.columns:
