@@ -1,0 +1,24 @@
+# Data and outputs – keep repo small for push (run fetch_data.py & backtest.py after clone)
+data/*.csv
+data/*.json
+data/*.parquet
+outputs/*.json
+outputs/*.csv
+!data/.gitkeep
+!outputs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+.env.local
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
