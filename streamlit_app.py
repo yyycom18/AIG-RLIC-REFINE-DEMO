@@ -77,7 +77,7 @@ def main():
         total_months = sum(q.get("n_months", 0) for q in monthly_quad)
         is_placeholder = total_months == 0
         if is_placeholder:
-            st.info("**Placeholder data.** For full results: run `python fetch_data.py` then `python backtest.py` locally, commit `outputs/backtest_results.json`, and push to refresh this app.")
+            st.info("**Placeholder data.** Return and drawdown show **—** (not 0). For full results: run `python fetch_data.py` then `python backtest.py` locally, commit `outputs/backtest_results.json`, and push to refresh this app.")
 
         window = bt.get("rolling_window_months", 60)
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
@@ -116,6 +116,9 @@ def main():
 
         st.subheader("2. Quarterly: Sector performance by quadrant")
         quarterly_quad = bt.get("quarterly_by_quadrant") or []
+        if not quarterly_quad:
+            with st.expander("**No quarterly quadrants yet** — click to see instructions", expanded=True):
+                st.caption("No quarterly data in placeholder. Run `python fetch_data.py` then `python backtest.py` to generate quarterly sector performance by quadrant, then commit `outputs/backtest_results.json` and push.")
         for item in quarterly_quad:
             q = item.get("quadrant", "")
             parts = q.split("_")
@@ -134,34 +137,34 @@ def main():
                     st.write("**Favorite by return:**", ", ".join(fav_q.get("favorite_by_return", [])))
                     st.write("**Unfavorite by return:**", ", ".join(fav_q.get("unfavorite_by_return", [])))
 
-        # Quadrant history over time (chart)
-        st.subheader("3. Quadrant history (monthly)")
+        # Quadrant history over time (chart) — always in an expander so section is clickable
         hist = bt.get("quadrant_history_monthly") or []
-        if not hist:
-            st.caption("No quadrant history in placeholder data. Run `python backtest.py` for the time series chart.")
-        if hist:
-            df_h = pd.DataFrame(hist)
-            if "date" in df_h.columns:
-                df_h["date"] = pd.to_datetime(df_h["date"])
-                quad_order = df_h["Quadrant"].unique()
-                fig = go.Figure()
-                for q in quad_order:
-                    mask = df_h["Quadrant"] == q
-                    fig.add_trace(go.Scatter(
-                        x=df_h.loc[mask, "date"],
-                        y=df_h.loc[mask, "VIX_ratio"],
-                        mode="markers",
-                        name=q,
-                        marker=dict(size=6),
-                    ))
-                fig.update_layout(
-                    title="VIX ratio over time (colored by quadrant)",
-                    xaxis_title="Date",
-                    yaxis_title="VIX 1M/3M ratio",
-                    height=400,
-                    legend=dict(orientation="h"),
-                )
-                st.plotly_chart(fig, use_container_width=True)
+        with st.expander("**3. Quadrant history (monthly)** — click to open", expanded=bool(hist)):
+            if not hist:
+                st.caption("No quadrant history in placeholder data. Run `python fetch_data.py` then `python backtest.py` to generate the time series chart (VIX ratio over time by regime).")
+            else:
+                df_h = pd.DataFrame(hist)
+                if "date" in df_h.columns:
+                    df_h["date"] = pd.to_datetime(df_h["date"])
+                    quad_order = df_h["Quadrant"].unique()
+                    fig = go.Figure()
+                    for q in quad_order:
+                        mask = df_h["Quadrant"] == q
+                        fig.add_trace(go.Scatter(
+                            x=df_h.loc[mask, "date"],
+                            y=df_h.loc[mask, "VIX_ratio"],
+                            mode="markers",
+                            name=q,
+                            marker=dict(size=6),
+                        ))
+                    fig.update_layout(
+                        title="VIX ratio over time (colored by quadrant)",
+                        xaxis_title="Date",
+                        yaxis_title="VIX 1M/3M ratio",
+                        height=400,
+                        legend=dict(orientation="h"),
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
 
     else:
         st.header("AIG Investment Clock: Current Status")
