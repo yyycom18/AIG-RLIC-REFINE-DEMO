@@ -57,6 +57,12 @@ def main():
         ["Regime Backtest Study", "AIG Investment Clock (Current Status)"],
     )
 
+    # Debug: show paths and file existence (helps when deployed on Streamlit Cloud)
+    with sidebar.expander("🔧 Paths & files (debug)"):
+        backtest_path = OUTPUTS / "backtest_results.json"
+        indicators_path = DATA / "indicators_monthly.csv"
+        st.code(f"BASE: {BASE}\nbacktest_results.json exists: {backtest_path.exists()}\nindicators_monthly.csv exists: {indicators_path.exists()}", language=None)
+
     bt = load_backtest()
     ind = load_indicators_monthly()
 
