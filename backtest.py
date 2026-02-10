@@ -199,6 +199,32 @@ def backtest_monthly_quarterly(ind: pd.DataFrame, etf: pd.DataFrame, window: int
             "unfavorite_by_drawdown": by_dd.tail(n).index.tolist(),
         }
 
+    def agg_by_quadrant(quad_align, ret, dd, is_monthly=True):
+        """Aggregate return/drawdown by quadrant; return monthly_by_quadrant-style list and fav dict."""
+        by_quad = []
+        for q in quad_align["Quadrant"].dropna().unique():
+            mask = quad_align["Quadrant"] == q
+            if mask.sum() < 2:
+                continue
+            r_q = ret.loc[mask]
+            d_q = dd.loc[mask]
+            n = int(mask.sum())
+            item = {
+                "quadrant": q,
+                "avg_return": r_q.mean().to_dict(),
+                "avg_drawdown": d_q.mean().to_dict(),
+                "max_drawdown": d_q.min().to_dict(),
+            }
+            if is_monthly:
+                item["n_months"] = n
+            else:
+                item["n_quarters"] = n
+            by_quad.append(item)
+        fav = {}
+        for item in by_quad:
+            fav[item["quadrant"]] = fav_unfav(item["avg_return"], item["avg_drawdown"], n=4)
+        return by_quad, fav
+
     monthly_fav = {}
     for item in monthly_by_quad:
         monthly_fav[item["quadrant"]] = fav_unfav(item["avg_return"], item["avg_drawdown"], n=4)
@@ -206,6 +232,41 @@ def backtest_monthly_quarterly(ind: pd.DataFrame, etf: pd.DataFrame, window: int
     quarterly_fav = {}
     for item in quarterly_by_quad:
         quarterly_fav[item["quadrant"]] = fav_unfav(item["avg_return"], item["avg_drawdown"], n=4)
+
+    # By S&P cycle: slice by date range, then aggregate (same quadrant classification, different period)
+    by_cycle = {}
+    for cy in config.SP_CYCLES:
+        name = cy["name"]
+        start = pd.Timestamp(cy["start"]) if cy.get("start") else None
+        end = pd.Timestamp(cy["end"]) if cy.get("end") else None
+        if start is None and end is None:
+            mask_m = pd.Series(True, index=quad_aligned.index)
+            mask_q = pd.Series(True, index=quad_q_aligned.index)
+        else:
+            mask_m = (quad_aligned.index >= start) & (quad_aligned.index <= end)
+            mask_q = (quad_q_aligned.index >= start) & (quad_q_aligned.index <= end)
+        quad_m_slice = quad_aligned.loc[mask_m]
+        quad_q_slice = quad_q_aligned.loc[mask_q]
+        ret_m_slice = ret_m.loc[mask_m]
+        dd_m_slice = dd_m.loc[mask_m]
+        ret_q_slice = ret_q.loc[mask_q]
+        dd_q_slice = dd_q.loc[mask_q]
+        if len(quad_m_slice) < 2:
+            by_cycle[name] = {
+                "monthly_by_quadrant": [],
+                "quarterly_by_quadrant": [],
+                "monthly_favorite_unfavorite": {},
+                "quarterly_favorite_unfavorite": {},
+            }
+            continue
+        m_by_q, m_fav = agg_by_quadrant(quad_m_slice, ret_m_slice, dd_m_slice, is_monthly=True)
+        q_by_q, q_fav = agg_by_quadrant(quad_q_slice, ret_q_slice, dd_q_slice, is_monthly=False)
+        by_cycle[name] = {
+            "monthly_by_quadrant": m_by_q,
+            "quarterly_by_quadrant": q_by_q,
+            "monthly_favorite_unfavorite": m_fav,
+            "quarterly_favorite_unfavorite": q_fav,
+        }
 
     # Full history for dashboard: quadrant per month/quarter (use list of dicts for JSON)
     quad_history_m = quad_aligned.dropna(how="all").reset_index()
@@ -228,6 +289,8 @@ def backtest_monthly_quarterly(ind: pd.DataFrame, etf: pd.DataFrame, window: int
         "quarterly_by_quadrant": quarterly_by_quad,
         "monthly_favorite_unfavorite": monthly_fav,
         "quarterly_favorite_unfavorite": quarterly_fav,
+        "by_cycle": by_cycle,
+        "sp_cycles_table": [{"name": c["name"], "start": c.get("start") or "—", "end": c.get("end") or "—", "description": c.get("description", "")} for c in config.SP_CYCLES],
         "quadrant_history_monthly": quad_history_m.to_dict(orient="records"),
         "quadrant_history_quarterly": quad_history_q.to_dict(orient="records"),
         "indicators_monthly": ind.reset_index().rename(columns={"index": "date"}).assign(date=lambda x: x["date"].astype(str)).to_dict(orient="records"),

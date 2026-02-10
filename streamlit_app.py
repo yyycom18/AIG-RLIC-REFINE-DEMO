@@ -72,6 +72,40 @@ def main():
             st.warning("Run `python fetch_data.py` then `python backtest.py` to generate backtest results.")
             return
 
+        # ---------- Methodology & data (i)-(v) ----------
+        with st.expander("**Methodology & data**", expanded=False):
+            st.markdown("""
+            **i. Data source**  
+            - **ETF (sector returns):** Sector ETFs (XLK, XLF, XLV, XLY, XLC, XLI, XLP, XLE, XLU, XLB, XLRE) — price history from **yfinance**.  
+            - **X series (stress horizon):** VIX 1M / VIX 3M ratio — **FRED** (VIXCLS, VXVCLS).  
+            - **Y series (credit stress):** HY–IG spread (high-yield minus investment-grade OAS) — **FRED** (BAMLH0A0HYM2, BAMLC0A0CM).
+
+            **ii. Testing data coverage**  
+            - **Indicator (X & Y):** Month-end from the earliest common date (e.g. VIX 3M from 2007, HY/IG from 1996) to latest.  
+            - **ETF:** Month-end from the earliest available sector ETF history to latest.  
+            - The backtest uses the **overlap** of both. The number of months and quarters in Part 1 & 2 (sector performance by quadrant) is the count of month-ends (or quarter-ends) that fall in each quadrant within the selected period (full sample or S&P cycle).
+
+            **iii. How ETF return is measured**  
+            - **Monthly:** Month-to-month simple return = (Price_end / Price_prev_end) − 1.  
+            - **Quarterly:** Quarter-to-quarter simple return.  
+            - **Drawdown:** Running drawdown from peak: (Cumulative_return − Peak) / Peak (negative).  
+            - **Max drawdown:** Minimum (worst) drawdown in that quadrant for each sector.
+
+            **iv. How X and Y series are managed**  
+            - **Classification:** Each month (or quarter) is assigned to one of four quadrants using **rolling 50th percentile (median)** over the last 60 months:  
+              - **X:** VIX 1M/3M ratio ≥ rolling median → High (stress); &lt; median → Low.  
+              - **Y:** HY–IG spread ≥ rolling median → Tight (credit stress); &lt; median → Easy.  
+            - Thresholds are **time-varying** (rolling), not fixed over the whole sample.
+
+            **v. S&P cycle (Bull / Bear) periods**  
+            The table below defines sub-periods used to slice the backtest. Part 1 & 2 can be viewed for **Full sample** or for each cycle; favorite/unfavorite and avg return/drawdown are then specific to that period.
+            """)
+            sp_table = bt.get("sp_cycles_table") or []
+            if sp_table:
+                st.dataframe(pd.DataFrame(sp_table), use_container_width=True, hide_index=True)
+            else:
+                st.caption("Run backtest to see S&P cycle table.")
+
         # Placeholder vs real: use metadata.is_real_data when present, else infer from total_months
         monthly_quad = bt.get("monthly_by_quadrant") or []
         total_months = sum(q.get("n_months", 0) for q in monthly_quad)
@@ -83,6 +117,27 @@ def main():
         window = bt.get("rolling_window_months", 60)
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
 
+        # S&P cycle selector: use by_cycle when available, else full sample only
+        by_cycle = bt.get("by_cycle") or {}
+        cycle_names = list(by_cycle.keys()) if by_cycle else ["Full sample"]
+        selected_cycle = st.selectbox(
+            "**Time slice (S&P cycle)** — Backtest figures below are for the selected period.",
+            options=cycle_names,
+            index=0,
+            key="sp_cycle_select",
+        )
+        if by_cycle and selected_cycle in by_cycle:
+            cycle_data = by_cycle[selected_cycle]
+            monthly_quad = cycle_data.get("monthly_by_quadrant") or []
+            quarterly_quad_source = cycle_data.get("quarterly_by_quadrant") or []
+            monthly_fav = cycle_data.get("monthly_favorite_unfavorite") or {}
+            quarterly_fav = cycle_data.get("quarterly_favorite_unfavorite") or {}
+        else:
+            monthly_quad = bt.get("monthly_by_quadrant") or []
+            quarterly_quad_source = bt.get("quarterly_by_quadrant") or []
+            monthly_fav = bt.get("monthly_favorite_unfavorite") or {}
+            quarterly_fav = bt.get("quarterly_favorite_unfavorite") or {}
+
         def _fmt(val, as_pct=True):
             """Show '—' only for placeholder zeros; for real data always show actual values."""
             if is_placeholder and (val == 0 or val == 0.0):
@@ -91,7 +146,8 @@ def main():
 
         # Monthly by quadrant: table of avg return, avg drawdown, and max drawdown (if present)
         st.subheader("1. Monthly: Sector performance by quadrant")
-        monthly_quad = bt.get("monthly_by_quadrant") or []
+        if selected_cycle != "Full sample":
+            st.caption(f"Period: **{selected_cycle}** — months and figures below are for this cycle only.")
         for item in monthly_quad:
             q = item.get("quadrant", "")
             parts = q.split("_")
@@ -105,8 +161,7 @@ def main():
                     cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
                 df = pd.DataFrame(cols, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
-                fav = bt.get("monthly_favorite_unfavorite") or {}
-                fav_q = fav.get(q, {})
+                fav_q = monthly_fav.get(q, {})
                 if fav_q:
                     c1, c2 = st.columns(2)
                     with c1:
@@ -117,11 +172,12 @@ def main():
                         st.write("**Unfavorite by drawdown:**", ", ".join(fav_q.get("unfavorite_by_drawdown", [])))
 
         st.subheader("2. Quarterly: Sector performance by quadrant")
-        quarterly_quad = bt.get("quarterly_by_quadrant") or []
-        if not quarterly_quad:
+        if selected_cycle != "Full sample":
+            st.caption(f"Period: **{selected_cycle}** — quarters and figures below are for this cycle only.")
+        if not quarterly_quad_source:
             with st.expander("**No quarterly quadrants yet** — click to see instructions", expanded=True):
                 st.caption("No quarterly data in placeholder. Run `python fetch_data.py` then `python backtest.py` to generate quarterly sector performance by quadrant, then commit `outputs/backtest_results.json` and push.")
-        for item in quarterly_quad:
+        for item in quarterly_quad_source:
             q = item.get("quadrant", "")
             parts = q.split("_")
             label = config.QUADRANTS.get((parts[0], parts[1]), q) if len(parts) >= 2 else q
@@ -134,8 +190,7 @@ def main():
                     cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
                 df = pd.DataFrame(cols, index=list(ret.keys()))
                 st.dataframe(df, use_container_width=True)
-                fav = bt.get("quarterly_favorite_unfavorite") or {}
-                fav_q = fav.get(q, {})
+                fav_q = quarterly_fav.get(q, {})
                 if fav_q:
                     st.write("**Favorite by return:**", ", ".join(fav_q.get("favorite_by_return", [])))
                     st.write("**Unfavorite by return:**", ", ".join(fav_q.get("unfavorite_by_return", [])))

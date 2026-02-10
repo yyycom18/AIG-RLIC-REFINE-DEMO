@@ -47,3 +47,17 @@ QUADRANTS = {
     ("High", "Easy"): "Shock regime (Buy recovery)",
     ("High", "Tight"): "Structural stress (Capital preservation)",
 }
+
+# S&P cycles (Bull / Bear periods) for regime backtest by sub-period
+# Each period is used to slice the sample and show avg return / drawdown by quadrant within that period
+SP_CYCLES = [
+    {"name": "Full sample", "start": None, "end": None, "description": "Entire backtest range"},
+    {"name": "Dot-com bust & aftermath", "start": "2000-03-31", "end": "2002-09-30", "description": "Bear"},
+    {"name": "2002–2007 expansion", "start": "2002-10-31", "end": "2007-10-31", "description": "Bull"},
+    {"name": "GFC (2007–2009)", "start": "2007-11-30", "end": "2009-02-28", "description": "Bear"},
+    {"name": "2009–2020 bull", "start": "2009-03-31", "end": "2020-02-29", "description": "Bull"},
+    {"name": "COVID crash & rebound", "start": "2020-03-31", "end": "2020-05-31", "description": "Bear then rebound"},
+    {"name": "2020–2021 recovery", "start": "2020-06-30", "end": "2021-12-31", "description": "Bull"},
+    {"name": "2022 bear", "start": "2022-01-31", "end": "2022-10-31", "description": "Bear"},
+    {"name": "2022–2025 recovery", "start": "2022-11-30", "end": "2025-12-31", "description": "Bull"},
+]
