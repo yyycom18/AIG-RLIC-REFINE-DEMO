@@ -334,6 +334,19 @@ def run_backtest():
     )
     config.OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
     ind, etf = load_data()
+    # Align to VIX availability: keep only from BACKTEST_START_DATE (2007)
+    start_ts = pd.Timestamp(config.BACKTEST_START_DATE)
+    ind = ind[ind.index >= start_ts]
+    etf = etf[etf.index >= start_ts]
+    if ind.empty or etf.empty:
+        raise ValueError(
+            f"No data on or after {config.BACKTEST_START_DATE}. "
+            "Indicator and ETF data must overlap from backtest start date."
+        )
+    common = ind.index.intersection(etf.index)
+    ind = ind.loc[common].sort_index()
+    etf = etf.loc[common].sort_index()
+    logger.info("Backtest aligned from %s: %s months", config.BACKTEST_START_DATE, len(ind))
     window = config.ROLLING_WINDOW_MONTHS
     results = backtest_monthly_quarterly(ind, etf, window)
     current = current_regime(ind, window)

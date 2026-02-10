@@ -12,9 +12,13 @@ OUTPUTS_DIR = BASE_DIR / "outputs"
 FRED_KEY_FILE = BASE_DIR / "FRED_API_KEY.txt"
 DOC_FRED_KEY = BASE_DIR.parent / "Doc" / "FRED_API_KEY.txt"
 
-# Data range
+# Data range (fetch)
 START_DATE = "1990-01-01"
 END_DATE = "2025-12-31"
+
+# Backtest start: align to VIX 3M availability (VIX 3M from FRED starts 2007)
+# All backtest and S&P cycle slicing use data from this date onward
+BACKTEST_START_DATE = "2007-01-01"
 
 # Sector ETFs (target)
 SECTOR_ETFS = [
@@ -48,13 +52,11 @@ QUADRANTS = {
     ("High", "Tight"): "Structural stress (Capital preservation)",
 }
 
-# S&P cycles (Bull / Bear periods) for regime backtest by sub-period
-# Each period is used to slice the sample and show avg return / drawdown by quadrant within that period
+# S&P cycles (Bull / Bear periods) from 2007 only (VIX availability)
+# Time slicing in the dashboard uses these periods; Part 1 & 2 show results for the selected period
 SP_CYCLES = [
-    {"name": "Full sample", "start": None, "end": None, "description": "Entire backtest range"},
-    {"name": "Dot-com bust & aftermath", "start": "2000-03-31", "end": "2002-09-30", "description": "Bear"},
-    {"name": "2002–2007 expansion", "start": "2002-10-31", "end": "2007-10-31", "description": "Bull"},
-    {"name": "GFC (2007–2009)", "start": "2007-11-30", "end": "2009-02-28", "description": "Bear"},
+    {"name": "Full sample", "start": None, "end": None, "description": "Entire backtest range (from 2007)"},
+    {"name": "GFC (2007–2009)", "start": "2007-12-31", "end": "2009-02-28", "description": "Bear"},
     {"name": "2009–2020 bull", "start": "2009-03-31", "end": "2020-02-29", "description": "Bull"},
     {"name": "COVID crash & rebound", "start": "2020-03-31", "end": "2020-05-31", "description": "Bear then rebound"},
     {"name": "2020–2021 recovery", "start": "2020-06-30", "end": "2021-12-31", "description": "Bull"},

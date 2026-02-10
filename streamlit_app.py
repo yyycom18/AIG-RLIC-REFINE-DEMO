@@ -80,10 +80,11 @@ def main():
             - **X series (stress horizon):** VIX 1M / VIX 3M ratio — **FRED** (VIXCLS, VXVCLS).  
             - **Y series (credit stress):** HY–IG spread (high-yield minus investment-grade OAS) — **FRED** (BAMLH0A0HYM2, BAMLC0A0CM).
 
-            **ii. Testing data coverage**  
-            - **Indicator (X & Y):** Month-end from the earliest common date (e.g. VIX 3M from 2007, HY/IG from 1996) to latest.  
-            - **ETF:** Month-end from the earliest available sector ETF history to latest.  
-            - The backtest uses the **overlap** of both. The number of months and quarters in Part 1 & 2 (sector performance by quadrant) is the count of month-ends (or quarter-ends) that fall in each quadrant within the selected period (full sample or S&P cycle).
+            **ii. Testing data coverage (aligned to 2007)**  
+            - **VIX 3M** (and thus X = VIX 1M/3M) is only available from **2007**. The entire backtest is therefore aligned to **from 2007 onward**: both indicator and ETF data are restricted to dates on or after 2007 before computing quadrants and returns.  
+            - **Indicator (X & Y):** Month-end from 2007 to latest.  
+            - **ETF:** Month-end over the same range (overlap with indicators from 2007).  
+            - The **number of months and quarters** in Part 1 & 2 is the count of month-ends (or quarter-ends) in each quadrant **for the selected time slice** (Full sample or one of the S&P periods below).
 
             **iii. How ETF return is measured**  
             - **Monthly:** Month-to-month simple return = (Price_end / Price_prev_end) − 1.  
@@ -97,11 +98,12 @@ def main():
               - **Y:** HY–IG spread ≥ rolling median → Tight (credit stress); &lt; median → Easy.  
             - Thresholds are **time-varying** (rolling), not fixed over the whole sample.
 
-            **v. S&P cycle (Bull / Bear) periods**  
-            The table below defines sub-periods used to slice the backtest. Part 1 & 2 can be viewed for **Full sample** or for each cycle; favorite/unfavorite and avg return/drawdown are then specific to that period.
+            **v. S&P cycle periods (from 2007)**  
+            The **time slice** selector below Part 1 & 2 uses the periods in the table. Selecting a period **changes the backtest results** in Part 1 & 2 to that period only (avg return, drawdown, max drawdown, and favorite/unfavorite sectors by quadrant). **Full sample** = entire range from 2007; other rows = Bull/Bear sub-periods.
             """)
             sp_table = bt.get("sp_cycles_table") or []
             if sp_table:
+                st.markdown("**Periods used for time slicing:**")
                 st.dataframe(pd.DataFrame(sp_table), use_container_width=True, hide_index=True)
             else:
                 st.caption("Run backtest to see S&P cycle table.")
@@ -117,11 +119,17 @@ def main():
         window = bt.get("rolling_window_months", 60)
         st.caption(f"Rolling window: {window} months for percentile-based quadrant classification.")
 
-        # S&P cycle selector: use by_cycle when available, else full sample only
+        # S&P cycle selector: order from sp_cycles_table so it matches Methodology table
         by_cycle = bt.get("by_cycle") or {}
-        cycle_names = list(by_cycle.keys()) if by_cycle else ["Full sample"]
+        sp_cycles_table = bt.get("sp_cycles_table") or []
+        if sp_cycles_table and by_cycle:
+            cycle_names = [r["name"] for r in sp_cycles_table if r["name"] in by_cycle]
+            if not cycle_names:
+                cycle_names = list(by_cycle.keys())
+        else:
+            cycle_names = list(by_cycle.keys()) if by_cycle else ["Full sample"]
         selected_cycle = st.selectbox(
-            "**Time slice (S&P cycle)** — Backtest figures below are for the selected period.",
+            "**Time slice (S&P cycle)** — Part 1 & 2 below show backtest results for the selected period only.",
             options=cycle_names,
             index=0,
             key="sp_cycle_select",
