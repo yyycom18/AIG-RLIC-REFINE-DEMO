@@ -40,6 +40,19 @@ def load_data():
     except Exception as e:
         raise ValueError(f"Error loading data: {e}. Check file format and integrity.") from e
 
+    # Normalize to month-end naive timestamps so FRED and yfinance dates align
+    ind.index = pd.to_datetime(ind.index)
+    if getattr(ind.index, "tz", None) is not None:
+        ind.index = pd.to_datetime(ind.index.asi8, unit="ns")
+    ind.index = ind.index.to_period("M").to_timestamp("M")
+    etf.index = pd.to_datetime(etf.index, utc=True)
+    if getattr(etf.index, "tz", None) is not None:
+        etf.index = pd.to_datetime(etf.index.asi8, unit="ns")
+    etf.index = etf.index.to_period("M").to_timestamp("M")
+    # One row per month (keep last if duplicates from resample)
+    ind = ind[~ind.index.duplicated(keep="last")]
+    etf = etf[~etf.index.duplicated(keep="last")]
+
     for col in ["VIX_RATIO", "HY_IG_SPREAD"]:
         if col not in ind.columns:
             raise ValueError(f"indicators_monthly.csv missing column: {col}")
@@ -110,6 +123,8 @@ def backtest_monthly_quarterly(ind: pd.DataFrame, etf: pd.DataFrame, window: int
 
     ret_m, dd_m, max_dd_m = returns_and_drawdown(etf)
     ret_m = ret_m.dropna(how="all")
+    # Align drawdown to return index so boolean indexing works
+    dd_m = dd_m.reindex(ret_m.index).ffill()
 
     common_index = quad.index.intersection(ret_m.index)
     if common_index.empty:
@@ -153,6 +168,7 @@ def backtest_monthly_quarterly(ind: pd.DataFrame, etf: pd.DataFrame, window: int
     quad_q = classify_quadrant(vix_q, hyig_q, max(4, window // 3))  # ~quarterly window
     ret_q, dd_q, _ = returns_and_drawdown(etf_q)
     ret_q = ret_q.dropna(how="all")
+    dd_q = dd_q.reindex(ret_q.index).ffill()
     quad_q_aligned = quad_q.reindex(ret_q.index).ffill()
 
     quarterly_by_quad = []

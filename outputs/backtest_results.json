@@ -1,65 +1,6102 @@
 {
   "metadata": {
-    "generated_at": "placeholder",
-    "data_sources": "none",
-    "data_range": {"start": null, "end": null},
-    "is_real_data": false
+    "generated_at": "2026-02-08T22:18:44.735934",
+    "data_sources": "FRED + yfinance",
+    "data_range": {
+      "start": "1998-12-31 00:00:00",
+      "end": "2025-12-31 00:00:00"
+    },
+    "is_real_data": true
   },
   "rolling_window_months": 60,
   "monthly_by_quadrant": [
     {
       "quadrant": "Low_Easy",
-      "n_months": 0,
-      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "n_months": 163,
+      "avg_return": {
+        "XLK": 0.020423174638145636,
+        "XLF": 0.020230433737734574,
+        "XLV": 0.016794012109898542,
+        "XLY": 0.019664656073211714,
+        "XLC": 0.03276963969056806,
+        "XLI": 0.020330173003443433,
+        "XLP": 0.01211698334870833,
+        "XLE": 0.020521856221773677,
+        "XLU": 0.015575759111656701,
+        "XLB": 0.019086819565737167,
+        "XLRE": 0.02077630000896544
+      },
+      "avg_drawdown": {
+        "XLK": -0.3157590606474024,
+        "XLF": -0.12077512476390828,
+        "XLV": -0.027790591553531717,
+        "XLY": -0.04172966603621641,
+        "XLC": -0.043781415148005515,
+        "XLI": -0.03207012373272541,
+        "XLP": -0.060732333435354544,
+        "XLE": -0.0942870763401923,
+        "XLU": -0.059618703294676015,
+        "XLB": -0.05361529351985363,
+        "XLRE": -0.0800516373406748
+      },
+      "max_drawdown": {
+        "XLK": -0.7415540003591301,
+        "XLF": -0.5851691645194282,
+        "XLV": -0.1561817461687228,
+        "XLY": -0.22346352113650747,
+        "XLC": -0.22636658521721345,
+        "XLI": -0.29870248620206724,
+        "XLP": -0.3060642186010712,
+        "XLE": -0.36089115402174937,
+        "XLU": -0.355507051554013,
+        "XLB": -0.3142368716644152,
+        "XLRE": -0.24827412373649835
+      }
     },
     {
       "quadrant": "Low_Tight",
-      "n_months": 0,
-      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
-    },
-    {
-      "quadrant": "High_Easy",
-      "n_months": 0,
-      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "n_months": 84,
+      "avg_return": {
+        "XLK": 0.004275169591510483,
+        "XLF": -0.0047903705088981185,
+        "XLV": 0.00516591187145052,
+        "XLY": 0.0073087663822797005,
+        "XLC": 0.03917892272890139,
+        "XLI": 0.003632480963708638,
+        "XLP": 0.004850106185536797,
+        "XLE": -0.000645918119018835,
+        "XLU": -0.0008314298849264112,
+        "XLB": 0.004763748699618789,
+        "XLRE": 0.013134255744259847
+      },
+      "avg_drawdown": {
+        "XLK": -0.5067357064219136,
+        "XLF": -0.3237583714268202,
+        "XLV": -0.11176785910847353,
+        "XLY": -0.1773340324817711,
+        "XLC": -0.17349839795723287,
+        "XLI": -0.17926197420800585,
+        "XLP": -0.08617377913499846,
+        "XLE": -0.26025820662208254,
+        "XLU": -0.16269427397386635,
+        "XLB": -0.17103120420527887,
+        "XLRE": -0.09223638452116681
+      },
+      "max_drawdown": {
+        "XLK": -0.8046646396002635,
+        "XLF": -0.7864096120929971,
+        "XLV": -0.3549903024212155,
+        "XLY": -0.5509333648221576,
+        "XLC": -0.43200063460807736,
+        "XLI": -0.5714911835481964,
+        "XLP": -0.3261055924529295,
+        "XLE": -0.6177418729981247,
+        "XLU": -0.43537304201254445,
+        "XLB": -0.5548847777719602,
+        "XLRE": -0.27514455956482775
+      }
     },
     {
       "quadrant": "High_Tight",
-      "n_months": 0,
-      "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0},
-      "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}
+      "n_months": 30,
+      "avg_return": {
+        "XLK": -0.009508303894704917,
+        "XLF": -0.027385158891371438,
+        "XLV": -0.016120473182781876,
+        "XLY": -0.015656968718865825,
+        "XLC": -0.00900574817601867,
+        "XLI": -0.01932323023027034,
+        "XLP": -0.012816219702253166,
+        "XLE": -0.036089212255876295,
+        "XLU": -0.00892718650303197,
+        "XLB": -0.022747585722444286,
+        "XLRE": -0.014717745232833666
+      },
+      "avg_drawdown": {
+        "XLK": -0.2143190502500265,
+        "XLF": -0.25086457812279334,
+        "XLV": -0.0778320512240852,
+        "XLY": -0.13028400224067888,
+        "XLC": -0.18193749260425668,
+        "XLI": -0.12340558357032463,
+        "XLP": -0.05417404805380683,
+        "XLE": -0.2896598104193903,
+        "XLU": -0.08808997056262052,
+        "XLB": -0.14399685697118064,
+        "XLRE": -0.12739133398774494
+      },
+      "max_drawdown": {
+        "XLK": -0.6326575073880337,
+        "XLF": -0.6537715663337648,
+        "XLV": -0.18477400471896696,
+        "XLY": -0.32493822724850074,
+        "XLC": -0.4345762349534742,
+        "XLI": -0.2871874334461888,
+        "XLP": -0.13292251676520112,
+        "XLE": -0.6397243238475098,
+        "XLU": -0.26374015365132886,
+        "XLB": -0.32981988227657494,
+        "XLRE": -0.3225146029833961
+      }
+    },
+    {
+      "quadrant": "High_Easy",
+      "n_months": 47,
+      "avg_return": {
+        "XLK": -0.00434586351177724,
+        "XLF": 0.002716926880652126,
+        "XLV": -0.004769744772327493,
+        "XLY": -0.00681173207744024,
+        "XLC": -0.013262266428543182,
+        "XLI": -0.00497029156845219,
+        "XLP": -0.002080978248326641,
+        "XLE": 0.014578294223843569,
+        "XLU": 0.0019928123484759513,
+        "XLB": -0.004620120977191865,
+        "XLRE": -0.005184016893244856
+      },
+      "avg_drawdown": {
+        "XLK": -0.1414770488767201,
+        "XLF": -0.1628606385974808,
+        "XLV": -0.0334710553853937,
+        "XLY": -0.0376499717115418,
+        "XLC": -0.05725781732362414,
+        "XLI": -0.03477830099708601,
+        "XLP": -0.028271216105031697,
+        "XLE": -0.16456413314212487,
+        "XLU": -0.04742980545327486,
+        "XLB": -0.050264653946217305,
+        "XLRE": -0.06274381093093984
+      },
+      "max_drawdown": {
+        "XLK": -0.5286179128058235,
+        "XLF": -0.5677941316325212,
+        "XLV": -0.11763179802059608,
+        "XLY": -0.20206287355108307,
+        "XLC": -0.3058463968643421,
+        "XLI": -0.11221249435403591,
+        "XLP": -0.13630336266231768,
+        "XLE": -0.5098047028195217,
+        "XLU": -0.1763208418898796,
+        "XLB": -0.15314545317123368,
+        "XLRE": -0.30266085758263456
+      }
     }
   ],
   "quarterly_by_quadrant": [
-    {"quadrant": "Low_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "Low_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "High_Easy", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}},
-    {"quadrant": "High_Tight", "n_quarters": 0, "avg_return": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "avg_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}, "max_drawdown": {"XLK": 0, "XLF": 0, "XLV": 0, "XLY": 0, "XLC": 0, "XLI": 0, "XLP": 0, "XLE": 0, "XLU": 0, "XLB": 0, "XLRE": 0}}
+    {
+      "quadrant": "Low_Easy",
+      "n_quarters": 55,
+      "avg_return": {
+        "XLK": 0.05891254218464442,
+        "XLF": 0.04881341759890208,
+        "XLV": 0.037341948143150845,
+        "XLY": 0.04461254162857065,
+        "XLC": 0.06253689956739107,
+        "XLI": 0.053630785351034944,
+        "XLP": 0.03092268882518619,
+        "XLE": 0.0605698128517326,
+        "XLU": 0.041512403704266794,
+        "XLB": 0.04597823906995226,
+        "XLRE": 0.040609064031702044
+      },
+      "avg_drawdown": {
+        "XLK": -0.2966205640408993,
+        "XLF": -0.09771302744732333,
+        "XLV": -0.017687455162846397,
+        "XLY": -0.035350439914614784,
+        "XLC": -0.03478376204908329,
+        "XLI": -0.022694005841739997,
+        "XLP": -0.05108683289073266,
+        "XLE": -0.08749493993823557,
+        "XLU": -0.04680917076827526,
+        "XLB": -0.03623972654584238,
+        "XLRE": -0.06439129200306452
+      },
+      "max_drawdown": {
+        "XLK": -0.7173815463012154,
+        "XLF": -0.5489555406120828,
+        "XLV": -0.11769580954200329,
+        "XLY": -0.1935963036897212,
+        "XLC": -0.18193777059954208,
+        "XLI": -0.261827414746733,
+        "XLP": -0.26500066448466547,
+        "XLE": -0.2982037212972686,
+        "XLU": -0.27123687829646065,
+        "XLB": -0.30738428388918215,
+        "XLRE": -0.23466914888655005
+      }
+    },
+    {
+      "quadrant": "Low_Tight",
+      "n_quarters": 26,
+      "avg_return": {
+        "XLK": 0.0018114378819704892,
+        "XLF": -0.017344384456437267,
+        "XLV": 0.013867984784959392,
+        "XLY": 0.018596146174890433,
+        "XLC": 0.10577640946085724,
+        "XLI": 0.009545473526284577,
+        "XLP": 0.010394917921358493,
+        "XLE": 0.0018979183992253095,
+        "XLU": -0.0027644987383070177,
+        "XLB": 0.02526810241047378,
+        "XLRE": 0.0340278858211732
+      },
+      "avg_drawdown": {
+        "XLK": -0.5466072706956544,
+        "XLF": -0.3268786090297037,
+        "XLV": -0.10838547658769335,
+        "XLY": -0.19274963741087556,
+        "XLC": -0.22395791776762305,
+        "XLI": -0.1946217651419864,
+        "XLP": -0.09448378738689985,
+        "XLE": -0.24580451337759784,
+        "XLU": -0.15993317421036324,
+        "XLB": -0.1628708080894215,
+        "XLRE": -0.11700572272878307
+      },
+      "max_drawdown": {
+        "XLK": -0.8046646396002635,
+        "XLF": -0.7409382597195165,
+        "XLV": -0.29635558395454914,
+        "XLY": -0.4849139960931702,
+        "XLC": -0.3993811302979666,
+        "XLI": -0.5337082241104432,
+        "XLP": -0.32602537483143557,
+        "XLE": -0.6177418729981249,
+        "XLU": -0.4030270207994711,
+        "XLB": -0.45480660907492,
+        "XLRE": -0.2624927247027522
+      }
+    },
+    {
+      "quadrant": "High_Tight",
+      "n_quarters": 11,
+      "avg_return": {
+        "XLK": -0.03523034933540806,
+        "XLF": -0.05789326128646053,
+        "XLV": -0.025364574829949593,
+        "XLY": -0.046193586697051654,
+        "XLC": -0.04160887079714289,
+        "XLI": -0.05891607194513315,
+        "XLP": -0.01355401531889095,
+        "XLE": -0.05579651810591648,
+        "XLU": -0.0043788956402994435,
+        "XLB": -0.06099724926324017,
+        "XLRE": -0.03880817706723884
+      },
+      "avg_drawdown": {
+        "XLK": -0.23218003845565444,
+        "XLF": -0.25545873059936874,
+        "XLV": -0.07935914054249214,
+        "XLY": -0.13505494469113308,
+        "XLC": -0.15061835129173576,
+        "XLI": -0.14967956245938213,
+        "XLP": -0.05318274611607975,
+        "XLE": -0.3247545934924708,
+        "XLU": -0.07792021976036725,
+        "XLB": -0.16566018305675276,
+        "XLRE": -0.13472960673376302
+      },
+      "max_drawdown": {
+        "XLK": -0.6326575073880333,
+        "XLF": -0.6413362742434219,
+        "XLV": -0.16105124329542783,
+        "XLY": -0.3249382272485008,
+        "XLC": -0.4021046442004674,
+        "XLI": -0.2871874334461887,
+        "XLP": -0.13016887330915416,
+        "XLE": -0.63972432384751,
+        "XLU": -0.26240314376578927,
+        "XLB": -0.2884327123623112,
+        "XLRE": -0.28893889493896197
+      }
+    },
+    {
+      "quadrant": "High_Easy",
+      "n_quarters": 16,
+      "avg_return": {
+        "XLK": 0.02752169733400505,
+        "XLF": 0.04399115169118374,
+        "XLV": 0.021890384971287438,
+        "XLY": 0.04089332983148407,
+        "XLC": 0.03776990379038805,
+        "XLI": 0.020808624914349615,
+        "XLP": 0.006040182067856122,
+        "XLE": 0.01609047457896068,
+        "XLU": 0.00858501223856413,
+        "XLB": 0.009629211941649625,
+        "XLRE": 0.005182313549517981
+      },
+      "avg_drawdown": {
+        "XLK": -0.16000462462695195,
+        "XLF": -0.16831665420444072,
+        "XLV": -0.01419582667585921,
+        "XLY": -0.014300061484905842,
+        "XLC": -0.030441789930545138,
+        "XLI": -0.013927672041750718,
+        "XLP": -0.019194208158581638,
+        "XLE": -0.14933017216230587,
+        "XLU": -0.03095129497197455,
+        "XLB": -0.025919383762928457,
+        "XLRE": -0.06033717263419612
+      },
+      "max_drawdown": {
+        "XLK": -0.45947462199207584,
+        "XLF": -0.48976412823775567,
+        "XLV": -0.10276025314861024,
+        "XLY": -0.2002751651411767,
+        "XLC": -0.1737223046463507,
+        "XLI": -0.05150028694052854,
+        "XLP": -0.08207630538861274,
+        "XLE": -0.35872987396605793,
+        "XLU": -0.17106744350201306,
+        "XLB": -0.12244443479577033,
+        "XLRE": -0.30266085758263434
+      }
+    }
   ],
   "monthly_favorite_unfavorite": {
-    "Low_Easy": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
-    "Low_Tight": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
-    "High_Easy": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []},
-    "High_Tight": {"favorite_by_return": [], "unfavorite_by_return": [], "favorite_by_drawdown": [], "unfavorite_by_drawdown": []}
+    "Low_Easy": {
+      "favorite_by_return": [
+        "XLC",
+        "XLRE",
+        "XLE",
+        "XLK"
+      ],
+      "unfavorite_by_return": [
+        "XLB",
+        "XLV",
+        "XLU",
+        "XLP"
+      ],
+      "favorite_by_drawdown": [
+        "XLK",
+        "XLF",
+        "XLE",
+        "XLRE"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLC",
+        "XLY",
+        "XLI",
+        "XLV"
+      ]
+    },
+    "Low_Tight": {
+      "favorite_by_return": [
+        "XLC",
+        "XLRE",
+        "XLY",
+        "XLV"
+      ],
+      "unfavorite_by_return": [
+        "XLI",
+        "XLE",
+        "XLU",
+        "XLF"
+      ],
+      "favorite_by_drawdown": [
+        "XLK",
+        "XLF",
+        "XLE",
+        "XLI"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLU",
+        "XLV",
+        "XLRE",
+        "XLP"
+      ]
+    },
+    "High_Tight": {
+      "favorite_by_return": [
+        "XLU",
+        "XLC",
+        "XLK",
+        "XLP"
+      ],
+      "unfavorite_by_return": [
+        "XLI",
+        "XLB",
+        "XLF",
+        "XLE"
+      ],
+      "favorite_by_drawdown": [
+        "XLE",
+        "XLF",
+        "XLK",
+        "XLC"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLI",
+        "XLU",
+        "XLV",
+        "XLP"
+      ]
+    },
+    "High_Easy": {
+      "favorite_by_return": [
+        "XLE",
+        "XLF",
+        "XLU",
+        "XLP"
+      ],
+      "unfavorite_by_return": [
+        "XLI",
+        "XLRE",
+        "XLY",
+        "XLC"
+      ],
+      "favorite_by_drawdown": [
+        "XLE",
+        "XLF",
+        "XLK",
+        "XLRE"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLY",
+        "XLI",
+        "XLV",
+        "XLP"
+      ]
+    }
   },
-  "quarterly_favorite_unfavorite": {},
-  "quadrant_history_monthly": [],
-  "quadrant_history_quarterly": [],
+  "quarterly_favorite_unfavorite": {
+    "Low_Easy": {
+      "favorite_by_return": [
+        "XLC",
+        "XLE",
+        "XLK",
+        "XLI"
+      ],
+      "unfavorite_by_return": [
+        "XLU",
+        "XLRE",
+        "XLV",
+        "XLP"
+      ],
+      "favorite_by_drawdown": [
+        "XLK",
+        "XLF",
+        "XLE",
+        "XLRE"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLY",
+        "XLC",
+        "XLI",
+        "XLV"
+      ]
+    },
+    "Low_Tight": {
+      "favorite_by_return": [
+        "XLC",
+        "XLRE",
+        "XLB",
+        "XLY"
+      ],
+      "unfavorite_by_return": [
+        "XLE",
+        "XLK",
+        "XLU",
+        "XLF"
+      ],
+      "favorite_by_drawdown": [
+        "XLK",
+        "XLF",
+        "XLE",
+        "XLC"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLU",
+        "XLRE",
+        "XLV",
+        "XLP"
+      ]
+    },
+    "High_Tight": {
+      "favorite_by_return": [
+        "XLU",
+        "XLP",
+        "XLV",
+        "XLK"
+      ],
+      "unfavorite_by_return": [
+        "XLE",
+        "XLF",
+        "XLI",
+        "XLB"
+      ],
+      "favorite_by_drawdown": [
+        "XLE",
+        "XLF",
+        "XLK",
+        "XLB"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLRE",
+        "XLV",
+        "XLU",
+        "XLP"
+      ]
+    },
+    "High_Easy": {
+      "favorite_by_return": [
+        "XLF",
+        "XLY",
+        "XLC",
+        "XLK"
+      ],
+      "unfavorite_by_return": [
+        "XLB",
+        "XLU",
+        "XLP",
+        "XLRE"
+      ],
+      "favorite_by_drawdown": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLRE"
+      ],
+      "unfavorite_by_drawdown": [
+        "XLP",
+        "XLY",
+        "XLV",
+        "XLI"
+      ]
+    }
+  },
+  "quadrant_history_monthly": [
+    {
+      "date": "1999-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.44,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.69,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.66,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.72,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.45,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.62,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.86,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.96,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.74,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.6,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.65,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-02-29",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.79,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.390000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.57,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.71,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.109999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.07,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.140000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.11,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.890000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.41,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.430000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.13,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.61,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.77,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.5200000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 8.33,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.68,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.680000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.18,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.379999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.37,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.0,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.66,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.88,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.440000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.389999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.96,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 8.129999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.85,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.0200000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.549999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.720000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.14,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.1000000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.47,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.48,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.28,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.38,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.6800000000000006,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.4700000000000006,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.2299999999999995,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-02-29",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.38,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.45,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.0,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.3000000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.1099999999999994,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.06,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.1099999999999994,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.91,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.72,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.31,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.44,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.02,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.1700000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.16,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.9000000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.42,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.65,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.69,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.7,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.79,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.52,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.47,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.23,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.15,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.2,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.38,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.47,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.5200000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.34,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.26,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.98,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-01-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.83,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-02-28",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.92,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-04-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.8000000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-05-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.52,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.98,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-07-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.9000000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2007-08-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.1,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2007-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.71,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-10-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.8600000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2007-11-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.79,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2007-12-31",
+      "VIX_ratio": 0.9652509652509652,
+      "HY_IG_spread": 3.89,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-01-31",
+      "VIX_ratio": 1.0392701309004362,
+      "HY_IG_spread": 4.65,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-02-29",
+      "VIX_ratio": 1.0056839712012124,
+      "HY_IG_spread": 5.15,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-03-31",
+      "VIX_ratio": 0.9988299531981278,
+      "HY_IG_spread": 5.210000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-04-30",
+      "VIX_ratio": 0.9783529411764704,
+      "HY_IG_spread": 4.26,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-05-31",
+      "VIX_ratio": 0.8684851436921577,
+      "HY_IG_spread": 4.050000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-06-30",
+      "VIX_ratio": 1.0075725704669751,
+      "HY_IG_spread": 4.609999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-07-31",
+      "VIX_ratio": 1.011910013233348,
+      "HY_IG_spread": 5.0,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-08-31",
+      "VIX_ratio": 0.91696269982238,
+      "HY_IG_spread": 5.19,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-09-30",
+      "VIX_ratio": 1.192552225249773,
+      "HY_IG_spread": 6.410000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-10-31",
+      "VIX_ratio": 1.117976479372783,
+      "HY_IG_spread": 10.110000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-11-30",
+      "VIX_ratio": 1.030638612033961,
+      "HY_IG_spread": 13.47,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-12-31",
+      "VIX_ratio": 0.9263547938860583,
+      "HY_IG_spread": 12.080000000000002,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-01-31",
+      "VIX_ratio": 1.0053811659192826,
+      "HY_IG_spread": 10.950000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-02-28",
+      "VIX_ratio": 1.0252156602521567,
+      "HY_IG_spread": 11.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-03-31",
+      "VIX_ratio": 0.9899080511325408,
+      "HY_IG_spread": 11.170000000000002,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-04-30",
+      "VIX_ratio": 0.9937380887557856,
+      "HY_IG_spread": 8.579999999999998,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-05-31",
+      "VIX_ratio": 0.9503779165297404,
+      "HY_IG_spread": 7.829999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-06-30",
+      "VIX_ratio": 0.9162030598052852,
+      "HY_IG_spread": 7.24,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-07-31",
+      "VIX_ratio": 0.9126760563380284,
+      "HY_IG_spread": 6.49,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-08-31",
+      "VIX_ratio": 0.8916695234830305,
+      "HY_IG_spread": 6.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-09-30",
+      "VIX_ratio": 0.9606151537884472,
+      "HY_IG_spread": 5.58,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-10-31",
+      "VIX_ratio": 1.0557275541795663,
+      "HY_IG_spread": 5.42,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-11-30",
+      "VIX_ratio": 0.9340701219512196,
+      "HY_IG_spread": 5.44,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-12-31",
+      "VIX_ratio": 0.9074926747593136,
+      "HY_IG_spread": 4.49,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-01-31",
+      "VIX_ratio": 0.9700551615445232,
+      "HY_IG_spread": 4.73,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-02-28",
+      "VIX_ratio": 0.9006928406466513,
+      "HY_IG_spread": 4.859999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-03-31",
+      "VIX_ratio": 0.8830321285140561,
+      "HY_IG_spread": 4.23,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-04-30",
+      "VIX_ratio": 0.9315589353612168,
+      "HY_IG_spread": 4.0600000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-05-31",
+      "VIX_ratio": 1.0021875,
+      "HY_IG_spread": 4.960000000000001,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2010-06-30",
+      "VIX_ratio": 0.9804144195288108,
+      "HY_IG_spread": 5.04,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2010-07-31",
+      "VIX_ratio": 0.8658806190125277,
+      "HY_IG_spread": 4.7,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-08-31",
+      "VIX_ratio": 0.897038567493113,
+      "HY_IG_spread": 4.97,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-09-30",
+      "VIX_ratio": 0.8977272727272727,
+      "HY_IG_spread": 4.42,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-10-31",
+      "VIX_ratio": 0.9237472766884532,
+      "HY_IG_spread": 4.16,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2010-11-30",
+      "VIX_ratio": 0.9344978165938864,
+      "HY_IG_spread": 4.4,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-12-31",
+      "VIX_ratio": 0.8492822966507177,
+      "HY_IG_spread": 3.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-01-31",
+      "VIX_ratio": 0.9692307692307692,
+      "HY_IG_spread": 3.46,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2011-02-28",
+      "VIX_ratio": 0.9175,
+      "HY_IG_spread": 3.2700000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-03-31",
+      "VIX_ratio": 0.8941532258064515,
+      "HY_IG_spread": 3.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-04-30",
+      "VIX_ratio": 0.8428571428571429,
+      "HY_IG_spread": 3.29,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-05-31",
+      "VIX_ratio": 0.8798405466970387,
+      "HY_IG_spread": 3.53,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-06-30",
+      "VIX_ratio": 0.8736118455843469,
+      "HY_IG_spread": 3.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-07-31",
+      "VIX_ratio": 1.1021388040157136,
+      "HY_IG_spread": 3.92,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2011-08-31",
+      "VIX_ratio": 0.9984212188190716,
+      "HY_IG_spread": 5.09,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2011-09-30",
+      "VIX_ratio": 1.041707080504365,
+      "HY_IG_spread": 5.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2011-10-31",
+      "VIX_ratio": 0.986499835363846,
+      "HY_IG_spread": 4.85,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2011-11-30",
+      "VIX_ratio": 0.9090909090909092,
+      "HY_IG_spread": 5.13,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2011-12-31",
+      "VIX_ratio": 0.8711839166046165,
+      "HY_IG_spread": 4.66,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2012-01-31",
+      "VIX_ratio": 0.8800362154821186,
+      "HY_IG_spread": 4.32,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-02-29",
+      "VIX_ratio": 0.8454128440366973,
+      "HY_IG_spread": 3.9500000000000006,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-03-31",
+      "VIX_ratio": 0.8328855454056959,
+      "HY_IG_spread": 4.07,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-04-30",
+      "VIX_ratio": 0.8876811594202898,
+      "HY_IG_spread": 4.01,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-05-31",
+      "VIX_ratio": 0.9176201372997712,
+      "HY_IG_spread": 4.67,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2012-06-30",
+      "VIX_ratio": 0.8405511811023622,
+      "HY_IG_spread": 4.290000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-07-31",
+      "VIX_ratio": 0.9109720885466794,
+      "HY_IG_spread": 4.220000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-08-31",
+      "VIX_ratio": 0.8472356935014548,
+      "HY_IG_spread": 4.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-09-30",
+      "VIX_ratio": 0.8932424758659853,
+      "HY_IG_spread": 4.050000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-10-31",
+      "VIX_ratio": 0.9632314862765408,
+      "HY_IG_spread": 4.12,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2012-11-30",
+      "VIX_ratio": 0.9189345686160972,
+      "HY_IG_spread": 4.050000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-12-31",
+      "VIX_ratio": 0.9620928990923652,
+      "HY_IG_spread": 3.8,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-01-31",
+      "VIX_ratio": 0.9183279742765272,
+      "HY_IG_spread": 3.47,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-02-28",
+      "VIX_ratio": 0.9585908529048208,
+      "HY_IG_spread": 3.49,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-03-31",
+      "VIX_ratio": 0.8674863387978141,
+      "HY_IG_spread": 3.3500000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-04-30",
+      "VIX_ratio": 0.9147496617050068,
+      "HY_IG_spread": 3.08,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-05-31",
+      "VIX_ratio": 0.9515469935785174,
+      "HY_IG_spread": 3.1500000000000004,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-06-30",
+      "VIX_ratio": 0.9168026101141924,
+      "HY_IG_spread": 3.54,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-07-31",
+      "VIX_ratio": 0.9014745308310992,
+      "HY_IG_spread": 3.18,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-08-31",
+      "VIX_ratio": 0.942382271468144,
+      "HY_IG_spread": 3.21,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-09-30",
+      "VIX_ratio": 0.988095238095238,
+      "HY_IG_spread": 3.27,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-10-31",
+      "VIX_ratio": 0.9016393442622952,
+      "HY_IG_spread": 2.91,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-11-30",
+      "VIX_ratio": 0.9115103127079176,
+      "HY_IG_spread": 2.8599999999999994,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-12-31",
+      "VIX_ratio": 0.9289099526066352,
+      "HY_IG_spread": 2.72,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-01-31",
+      "VIX_ratio": 1.0176893311221669,
+      "HY_IG_spread": 2.91,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-02-28",
+      "VIX_ratio": 0.8860759493670886,
+      "HY_IG_spread": 2.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-03-31",
+      "VIX_ratio": 0.920424403183024,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-04-30",
+      "VIX_ratio": 0.9122448979591836,
+      "HY_IG_spread": 2.5700000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-05-31",
+      "VIX_ratio": 0.8290909090909091,
+      "HY_IG_spread": 2.55,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-06-30",
+      "VIX_ratio": 0.8893159108378171,
+      "HY_IG_spread": 2.4399999999999995,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-07-31",
+      "VIX_ratio": 1.034798534798535,
+      "HY_IG_spread": 2.94,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-08-31",
+      "VIX_ratio": 0.8395234758234058,
+      "HY_IG_spread": 2.72,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-09-30",
+      "VIX_ratio": 0.9549180327868853,
+      "HY_IG_spread": 3.2,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-10-31",
+      "VIX_ratio": 0.8497880072683222,
+      "HY_IG_spread": 3.03,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-11-30",
+      "VIX_ratio": 0.8367859384808538,
+      "HY_IG_spread": 3.32,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-12-31",
+      "VIX_ratio": 0.972644376899696,
+      "HY_IG_spread": 3.6,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2015-01-31",
+      "VIX_ratio": 0.9610449129239228,
+      "HY_IG_spread": 3.73,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2015-02-28",
+      "VIX_ratio": 0.7898164594434577,
+      "HY_IG_spread": 3.14,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2015-03-31",
+      "VIX_ratio": 0.8717217787913341,
+      "HY_IG_spread": 3.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2015-04-30",
+      "VIX_ratio": 0.8828883495145631,
+      "HY_IG_spread": 3.25,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2015-05-31",
+      "VIX_ratio": 0.8998699609882964,
+      "HY_IG_spread": 3.2,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2015-06-30",
+      "VIX_ratio": 0.9870059556036818,
+      "HY_IG_spread": 3.52,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2015-07-31",
+      "VIX_ratio": 0.8134228187919462,
+      "HY_IG_spread": 3.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2015-08-31",
+      "VIX_ratio": 1.0716170373162457,
+      "HY_IG_spread": 4.01,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2015-09-30",
+      "VIX_ratio": 0.98989898989899,
+      "HY_IG_spread": 4.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2015-10-31",
+      "VIX_ratio": 0.8190217391304349,
+      "HY_IG_spread": 4.24,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2015-11-30",
+      "VIX_ratio": 0.8723634396971336,
+      "HY_IG_spread": 4.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2015-12-31",
+      "VIX_ratio": 0.9196969696969696,
+      "HY_IG_spread": 5.220000000000001,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2016-01-31",
+      "VIX_ratio": 0.8914386584289496,
+      "HY_IG_spread": 5.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-02-29",
+      "VIX_ratio": 0.917820455560518,
+      "HY_IG_spread": 5.7,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2016-03-31",
+      "VIX_ratio": 0.816744730679157,
+      "HY_IG_spread": 5.35,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-04-30",
+      "VIX_ratio": 0.8509485094850948,
+      "HY_IG_spread": 4.69,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-05-31",
+      "VIX_ratio": 0.8532772098616958,
+      "HY_IG_spread": 4.43,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-06-30",
+      "VIX_ratio": 0.8640132669983417,
+      "HY_IG_spread": 4.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-07-31",
+      "VIX_ratio": 0.7697795071335927,
+      "HY_IG_spread": 4.19,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-08-31",
+      "VIX_ratio": 0.8314745972738538,
+      "HY_IG_spread": 3.71,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2016-09-30",
+      "VIX_ratio": 0.8118509468540012,
+      "HY_IG_spread": 3.54,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2016-10-31",
+      "VIX_ratio": 0.9557422969187672,
+      "HY_IG_spread": 3.53,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2016-11-30",
+      "VIX_ratio": 0.8279503105590061,
+      "HY_IG_spread": 3.31,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2016-12-31",
+      "VIX_ratio": 0.8488512696493349,
+      "HY_IG_spread": 2.92,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-01-31",
+      "VIX_ratio": 0.8280386740331491,
+      "HY_IG_spread": 2.72,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-02-28",
+      "VIX_ratio": 0.8455497382198953,
+      "HY_IG_spread": 2.53,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-03-31",
+      "VIX_ratio": 0.9095588235294118,
+      "HY_IG_spread": 2.68,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2017-04-30",
+      "VIX_ratio": 0.8368136117556072,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-05-31",
+      "VIX_ratio": 0.8242280285035629,
+      "HY_IG_spread": 2.5500000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-06-30",
+      "VIX_ratio": 0.8508371385083713,
+      "HY_IG_spread": 2.62,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-07-31",
+      "VIX_ratio": 0.8227746591820368,
+      "HY_IG_spread": 2.52,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-08-31",
+      "VIX_ratio": 0.767391304347826,
+      "HY_IG_spread": 2.6900000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-09-30",
+      "VIX_ratio": 0.7614091273018414,
+      "HY_IG_spread": 2.49,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-10-31",
+      "VIX_ratio": 0.8222940226171244,
+      "HY_IG_spread": 2.5,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-11-30",
+      "VIX_ratio": 0.8650306748466258,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-12-31",
+      "VIX_ratio": 0.8433919022154316,
+      "HY_IG_spread": 2.64,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-01-31",
+      "VIX_ratio": 0.9087248322147652,
+      "HY_IG_spread": 2.38,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-02-28",
+      "VIX_ratio": 0.9979889391654098,
+      "HY_IG_spread": 2.46,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-03-31",
+      "VIX_ratio": 0.9717761557177614,
+      "HY_IG_spread": 2.5500000000000003,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-04-30",
+      "VIX_ratio": 0.9186851211072664,
+      "HY_IG_spread": 2.3200000000000003,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-05-31",
+      "VIX_ratio": 0.9448867115737908,
+      "HY_IG_spread": 2.41,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-06-30",
+      "VIX_ratio": 0.938739789964994,
+      "HY_IG_spread": 2.41,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-07-31",
+      "VIX_ratio": 0.8628110289172831,
+      "HY_IG_spread": 2.3,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-08-31",
+      "VIX_ratio": 0.8488448844884487,
+      "HY_IG_spread": 2.28,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-09-30",
+      "VIX_ratio": 0.8205822613405551,
+      "HY_IG_spread": 2.15,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-10-31",
+      "VIX_ratio": 1.0037825059101655,
+      "HY_IG_spread": 2.56,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-11-30",
+      "VIX_ratio": 0.9565907887771308,
+      "HY_IG_spread": 2.84,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-12-31",
+      "VIX_ratio": 1.0712178676780448,
+      "HY_IG_spread": 3.74,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2019-01-31",
+      "VIX_ratio": 0.9267337807606264,
+      "HY_IG_spread": 2.99,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2019-02-28",
+      "VIX_ratio": 0.9180124223602484,
+      "HY_IG_spread": 2.63,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-03-31",
+      "VIX_ratio": 0.8677215189873417,
+      "HY_IG_spread": 2.78,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-04-30",
+      "VIX_ratio": 0.861457649376231,
+      "HY_IG_spread": 2.56,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2019-05-31",
+      "VIX_ratio": 0.9936271906532133,
+      "HY_IG_spread": 3.24,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2019-06-30",
+      "VIX_ratio": 0.9389788293897884,
+      "HY_IG_spread": 2.8500000000000005,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-07-31",
+      "VIX_ratio": 0.9532820816085156,
+      "HY_IG_spread": 2.79,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-08-31",
+      "VIX_ratio": 0.9713408393039918,
+      "HY_IG_spread": 2.87,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-09-30",
+      "VIX_ratio": 0.9042316258351892,
+      "HY_IG_spread": 2.8,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-10-31",
+      "VIX_ratio": 0.8236760124610591,
+      "HY_IG_spread": 2.9800000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2019-11-30",
+      "VIX_ratio": 0.8136686009026434,
+      "HY_IG_spread": 2.9099999999999997,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2019-12-31",
+      "VIX_ratio": 0.8683049779458097,
+      "HY_IG_spread": 2.59,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2020-01-31",
+      "VIX_ratio": 1.0112721417069244,
+      "HY_IG_spread": 2.9400000000000004,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-02-29",
+      "VIX_ratio": 1.343718592964824,
+      "HY_IG_spread": 3.76,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-03-31",
+      "VIX_ratio": 1.1080298013245031,
+      "HY_IG_spread": 5.72,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-04-30",
+      "VIX_ratio": 0.9743223965763196,
+      "HY_IG_spread": 5.46,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-05-31",
+      "VIX_ratio": 0.908820614469772,
+      "HY_IG_spread": 4.67,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-06-30",
+      "VIX_ratio": 0.9357318573185732,
+      "HY_IG_spread": 4.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-07-31",
+      "VIX_ratio": 0.8232918209357118,
+      "HY_IG_spread": 3.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2020-08-31",
+      "VIX_ratio": 0.8291993720565148,
+      "HY_IG_spread": 3.6599999999999993,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2020-09-30",
+      "VIX_ratio": 0.8334386852085968,
+      "HY_IG_spread": 3.97,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2020-10-31",
+      "VIX_ratio": 1.0482492417976288,
+      "HY_IG_spread": 3.98,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-11-30",
+      "VIX_ratio": 0.8454582819564325,
+      "HY_IG_spread": 3.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2020-12-31",
+      "VIX_ratio": 0.8999208860759493,
+      "HY_IG_spread": 2.83,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-01-31",
+      "VIX_ratio": 0.9766824085005904,
+      "HY_IG_spread": 2.81,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-02-28",
+      "VIX_ratio": 0.9442567567567568,
+      "HY_IG_spread": 2.62,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-03-31",
+      "VIX_ratio": 0.8758465011286681,
+      "HY_IG_spread": 2.39,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-04-30",
+      "VIX_ratio": 0.8432260987766198,
+      "HY_IG_spread": 2.34,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-05-31",
+      "VIX_ratio": 0.8183593750000001,
+      "HY_IG_spread": 2.43,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-06-30",
+      "VIX_ratio": 0.8113787801127627,
+      "HY_IG_spread": 2.18,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-07-31",
+      "VIX_ratio": 0.8223624887285842,
+      "HY_IG_spread": 2.4,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-08-31",
+      "VIX_ratio": 0.8070519098922624,
+      "HY_IG_spread": 2.29,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-09-30",
+      "VIX_ratio": 0.9694176790950984,
+      "HY_IG_spread": 2.26,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-10-31",
+      "VIX_ratio": 0.7982326951399117,
+      "HY_IG_spread": 2.26,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-11-30",
+      "VIX_ratio": 0.9665837184500534,
+      "HY_IG_spread": 2.64,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2021-12-31",
+      "VIX_ratio": 0.7870201096892139,
+      "HY_IG_spread": 2.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2022-01-31",
+      "VIX_ratio": 0.9247672253258844,
+      "HY_IG_spread": 2.53,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2022-02-28",
+      "VIX_ratio": 1.0168634064080944,
+      "HY_IG_spread": 2.47,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2022-03-31",
+      "VIX_ratio": 0.8405560098119378,
+      "HY_IG_spread": 2.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2022-04-30",
+      "VIX_ratio": 1.0066305003013862,
+      "HY_IG_spread": 2.5600000000000005,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2022-05-31",
+      "VIX_ratio": 0.9356913183279744,
+      "HY_IG_spread": 2.82,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-06-30",
+      "VIX_ratio": 0.96634129922585,
+      "HY_IG_spread": 4.23,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-07-31",
+      "VIX_ratio": 0.8965952080706179,
+      "HY_IG_spread": 3.3,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2022-08-31",
+      "VIX_ratio": 0.9707317073170731,
+      "HY_IG_spread": 3.5500000000000003,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-09-30",
+      "VIX_ratio": 0.992467043314501,
+      "HY_IG_spread": 3.76,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-10-31",
+      "VIX_ratio": 0.9613670133729568,
+      "HY_IG_spread": 2.97,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-11-30",
+      "VIX_ratio": 0.8746281342966424,
+      "HY_IG_spread": 3.13,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2022-12-31",
+      "VIX_ratio": 0.8921366817620421,
+      "HY_IG_spread": 3.43,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-01-31",
+      "VIX_ratio": 0.932244113407016,
+      "HY_IG_spread": 3.05,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2023-02-28",
+      "VIX_ratio": 0.9709193245778612,
+      "HY_IG_spread": 2.92,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2023-03-31",
+      "VIX_ratio": 0.8808290155440414,
+      "HY_IG_spread": 3.13,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-04-30",
+      "VIX_ratio": 0.8075742067553736,
+      "HY_IG_spread": 3.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-05-31",
+      "VIX_ratio": 0.8876793666501732,
+      "HY_IG_spread": 3.2700000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-06-30",
+      "VIX_ratio": 0.848314606741573,
+      "HY_IG_spread": 2.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2023-07-31",
+      "VIX_ratio": 0.8513429106808245,
+      "HY_IG_spread": 2.6,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2023-08-31",
+      "VIX_ratio": 0.8523869346733669,
+      "HY_IG_spread": 2.63,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2023-09-30",
+      "VIX_ratio": 0.946515397082658,
+      "HY_IG_spread": 2.78,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2023-10-31",
+      "VIX_ratio": 0.930733709594664,
+      "HY_IG_spread": 3.1,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2023-11-30",
+      "VIX_ratio": 0.8367875647668394,
+      "HY_IG_spread": 2.7299999999999995,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2023-12-31",
+      "VIX_ratio": 0.8158584534731324,
+      "HY_IG_spread": 2.35,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-01-31",
+      "VIX_ratio": 0.8991228070175438,
+      "HY_IG_spread": 2.57,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-02-29",
+      "VIX_ratio": 0.8975217682518419,
+      "HY_IG_spread": 2.29,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-03-31",
+      "VIX_ratio": 0.8564845292955893,
+      "HY_IG_spread": 2.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-04-30",
+      "VIX_ratio": 0.94333936106088,
+      "HY_IG_spread": 2.27,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2024-05-31",
+      "VIX_ratio": 0.8813096862210096,
+      "HY_IG_spread": 2.3200000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-06-30",
+      "VIX_ratio": 0.8567493112947658,
+      "HY_IG_spread": 2.25,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-07-31",
+      "VIX_ratio": 0.9640542133176192,
+      "HY_IG_spread": 2.28,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2024-08-31",
+      "VIX_ratio": 0.8605851979345955,
+      "HY_IG_spread": 2.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-09-30",
+      "VIX_ratio": 0.8704474505723205,
+      "HY_IG_spread": 2.11,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-10-31",
+      "VIX_ratio": 1.0229681978798586,
+      "HY_IG_spread": 2.02,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2024-11-30",
+      "VIX_ratio": 0.8308733087330873,
+      "HY_IG_spread": 1.91,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-12-31",
+      "VIX_ratio": 0.9141201264488936,
+      "HY_IG_spread": 2.1,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2025-01-31",
+      "VIX_ratio": 0.8914812805208898,
+      "HY_IG_spread": 1.8600000000000003,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-02-28",
+      "VIX_ratio": 0.9727452923686818,
+      "HY_IG_spread": 1.99,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2025-03-31",
+      "VIX_ratio": 1.0141101502048249,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2025-04-30",
+      "VIX_ratio": 0.9671104150352388,
+      "HY_IG_spread": 2.85,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2025-05-31",
+      "VIX_ratio": 0.8685687558465857,
+      "HY_IG_spread": 2.4,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-06-30",
+      "VIX_ratio": 0.86059670781893,
+      "HY_IG_spread": 2.1,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-07-31",
+      "VIX_ratio": 0.8735632183908045,
+      "HY_IG_spread": 2.07,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-08-31",
+      "VIX_ratio": 0.8370572207084468,
+      "HY_IG_spread": 2.03,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-09-30",
+      "VIX_ratio": 0.8673415023974428,
+      "HY_IG_spread": 2.04,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-10-31",
+      "VIX_ratio": 0.8511469009272817,
+      "HY_IG_spread": 2.14,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-11-30",
+      "VIX_ratio": 0.8324847250509165,
+      "HY_IG_spread": 2.1,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-12-31",
+      "VIX_ratio": 0.8223322332233223,
+      "HY_IG_spread": 2.02,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    }
+  ],
+  "quadrant_history_quarterly": [
+    {
+      "date": "1999-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.72,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.86,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "1999-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.6,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.109999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2000-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.140000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2001-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.41,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.61,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 8.33,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2001-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 5.37,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.88,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.96,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2002-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 7.0200000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 6.14,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2003-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 4.38,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2003-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.2299999999999995,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.45,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 3.1099999999999994,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.91,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2004-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.9000000000000004,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.65,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2005-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.79,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.23,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.38,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2006-12-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.98,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-03-31",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.9,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-06-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 1.98,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-09-30",
+      "VIX_ratio": NaN,
+      "HY_IG_spread": 2.71,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2007-12-31",
+      "VIX_ratio": 0.9652509652509652,
+      "HY_IG_spread": 3.89,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-03-31",
+      "VIX_ratio": 0.9988299531981278,
+      "HY_IG_spread": 5.210000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-06-30",
+      "VIX_ratio": 1.0075725704669751,
+      "HY_IG_spread": 4.609999999999999,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-09-30",
+      "VIX_ratio": 1.192552225249773,
+      "HY_IG_spread": 6.410000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2008-12-31",
+      "VIX_ratio": 0.9263547938860583,
+      "HY_IG_spread": 12.080000000000002,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-03-31",
+      "VIX_ratio": 0.9899080511325408,
+      "HY_IG_spread": 11.170000000000002,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-06-30",
+      "VIX_ratio": 0.9162030598052852,
+      "HY_IG_spread": 7.24,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-09-30",
+      "VIX_ratio": 0.9606151537884472,
+      "HY_IG_spread": 5.58,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2009-12-31",
+      "VIX_ratio": 0.9074926747593136,
+      "HY_IG_spread": 4.49,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-03-31",
+      "VIX_ratio": 0.8830321285140561,
+      "HY_IG_spread": 4.23,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-06-30",
+      "VIX_ratio": 0.9804144195288108,
+      "HY_IG_spread": 5.04,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2010-09-30",
+      "VIX_ratio": 0.8977272727272727,
+      "HY_IG_spread": 4.42,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2010-12-31",
+      "VIX_ratio": 0.8492822966507177,
+      "HY_IG_spread": 3.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-03-31",
+      "VIX_ratio": 0.8941532258064515,
+      "HY_IG_spread": 3.27,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-06-30",
+      "VIX_ratio": 0.8736118455843469,
+      "HY_IG_spread": 3.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2011-09-30",
+      "VIX_ratio": 1.041707080504365,
+      "HY_IG_spread": 5.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2011-12-31",
+      "VIX_ratio": 0.8711839166046165,
+      "HY_IG_spread": 4.66,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2012-03-31",
+      "VIX_ratio": 0.8328855454056959,
+      "HY_IG_spread": 4.07,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-06-30",
+      "VIX_ratio": 0.8405511811023622,
+      "HY_IG_spread": 4.290000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-09-30",
+      "VIX_ratio": 0.8932424758659853,
+      "HY_IG_spread": 4.050000000000001,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2012-12-31",
+      "VIX_ratio": 0.9620928990923652,
+      "HY_IG_spread": 3.8,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-03-31",
+      "VIX_ratio": 0.8674863387978141,
+      "HY_IG_spread": 3.3500000000000005,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2013-06-30",
+      "VIX_ratio": 0.9168026101141924,
+      "HY_IG_spread": 3.54,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-09-30",
+      "VIX_ratio": 0.988095238095238,
+      "HY_IG_spread": 3.27,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2013-12-31",
+      "VIX_ratio": 0.9289099526066352,
+      "HY_IG_spread": 2.72,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-03-31",
+      "VIX_ratio": 0.920424403183024,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-06-30",
+      "VIX_ratio": 0.8893159108378171,
+      "HY_IG_spread": 2.4399999999999995,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2014-09-30",
+      "VIX_ratio": 0.9549180327868853,
+      "HY_IG_spread": 3.2,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2014-12-31",
+      "VIX_ratio": 0.972644376899696,
+      "HY_IG_spread": 3.6,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2015-03-31",
+      "VIX_ratio": 0.8717217787913341,
+      "HY_IG_spread": 3.46,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2015-06-30",
+      "VIX_ratio": 0.9870059556036818,
+      "HY_IG_spread": 3.52,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2015-09-30",
+      "VIX_ratio": 0.98989898989899,
+      "HY_IG_spread": 4.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2015-12-31",
+      "VIX_ratio": 0.9196969696969696,
+      "HY_IG_spread": 5.220000000000001,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2016-03-31",
+      "VIX_ratio": 0.816744730679157,
+      "HY_IG_spread": 5.35,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-06-30",
+      "VIX_ratio": 0.8640132669983417,
+      "HY_IG_spread": 4.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2016-09-30",
+      "VIX_ratio": 0.8118509468540012,
+      "HY_IG_spread": 3.54,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2016-12-31",
+      "VIX_ratio": 0.8488512696493349,
+      "HY_IG_spread": 2.92,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-03-31",
+      "VIX_ratio": 0.9095588235294118,
+      "HY_IG_spread": 2.68,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-06-30",
+      "VIX_ratio": 0.8508371385083713,
+      "HY_IG_spread": 2.62,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-09-30",
+      "VIX_ratio": 0.7614091273018414,
+      "HY_IG_spread": 2.49,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2017-12-31",
+      "VIX_ratio": 0.8433919022154316,
+      "HY_IG_spread": 2.64,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-03-31",
+      "VIX_ratio": 0.9717761557177614,
+      "HY_IG_spread": 2.5500000000000003,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-06-30",
+      "VIX_ratio": 0.938739789964994,
+      "HY_IG_spread": 2.41,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2018-09-30",
+      "VIX_ratio": 0.8205822613405551,
+      "HY_IG_spread": 2.15,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2018-12-31",
+      "VIX_ratio": 1.0712178676780448,
+      "HY_IG_spread": 3.74,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2019-03-31",
+      "VIX_ratio": 0.8677215189873417,
+      "HY_IG_spread": 2.78,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2019-06-30",
+      "VIX_ratio": 0.9389788293897884,
+      "HY_IG_spread": 2.8500000000000005,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-09-30",
+      "VIX_ratio": 0.9042316258351892,
+      "HY_IG_spread": 2.8,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2019-12-31",
+      "VIX_ratio": 0.8683049779458097,
+      "HY_IG_spread": 2.59,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2020-03-31",
+      "VIX_ratio": 1.1080298013245031,
+      "HY_IG_spread": 5.72,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-06-30",
+      "VIX_ratio": 0.9357318573185732,
+      "HY_IG_spread": 4.84,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2020-09-30",
+      "VIX_ratio": 0.8334386852085968,
+      "HY_IG_spread": 3.97,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2020-12-31",
+      "VIX_ratio": 0.8999208860759493,
+      "HY_IG_spread": 2.83,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2021-03-31",
+      "VIX_ratio": 0.8758465011286681,
+      "HY_IG_spread": 2.39,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-06-30",
+      "VIX_ratio": 0.8113787801127627,
+      "HY_IG_spread": 2.18,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2021-09-30",
+      "VIX_ratio": 0.9694176790950984,
+      "HY_IG_spread": 2.26,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2021-12-31",
+      "VIX_ratio": 0.7870201096892139,
+      "HY_IG_spread": 2.12,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2022-03-31",
+      "VIX_ratio": 0.8405560098119378,
+      "HY_IG_spread": 2.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2022-06-30",
+      "VIX_ratio": 0.96634129922585,
+      "HY_IG_spread": 4.23,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-09-30",
+      "VIX_ratio": 0.992467043314501,
+      "HY_IG_spread": 3.76,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2022-12-31",
+      "VIX_ratio": 0.8921366817620421,
+      "HY_IG_spread": 3.43,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-03-31",
+      "VIX_ratio": 0.8808290155440414,
+      "HY_IG_spread": 3.13,
+      "VIX_class": "Low",
+      "HYIG_class": "Tight",
+      "Quadrant": "Low_Tight",
+      "QuadrantLabel": "Low VIX, Tight credit"
+    },
+    {
+      "date": "2023-06-30",
+      "VIX_ratio": 0.848314606741573,
+      "HY_IG_spread": 2.75,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2023-09-30",
+      "VIX_ratio": 0.946515397082658,
+      "HY_IG_spread": 2.78,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2023-12-31",
+      "VIX_ratio": 0.8158584534731324,
+      "HY_IG_spread": 2.35,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-03-31",
+      "VIX_ratio": 0.8564845292955893,
+      "HY_IG_spread": 2.21,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-06-30",
+      "VIX_ratio": 0.8567493112947658,
+      "HY_IG_spread": 2.25,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-09-30",
+      "VIX_ratio": 0.8704474505723205,
+      "HY_IG_spread": 2.11,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2024-12-31",
+      "VIX_ratio": 0.9141201264488936,
+      "HY_IG_spread": 2.1,
+      "VIX_class": "High",
+      "HYIG_class": "Easy",
+      "Quadrant": "High_Easy",
+      "QuadrantLabel": "High VIX, Easy credit"
+    },
+    {
+      "date": "2025-03-31",
+      "VIX_ratio": 1.0141101502048249,
+      "HY_IG_spread": 2.58,
+      "VIX_class": "High",
+      "HYIG_class": "Tight",
+      "Quadrant": "High_Tight",
+      "QuadrantLabel": "High VIX, Tight credit"
+    },
+    {
+      "date": "2025-06-30",
+      "VIX_ratio": 0.86059670781893,
+      "HY_IG_spread": 2.1,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-09-30",
+      "VIX_ratio": 0.8673415023974428,
+      "HY_IG_spread": 2.04,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    },
+    {
+      "date": "2025-12-31",
+      "VIX_ratio": 0.8223322332233223,
+      "HY_IG_spread": 2.02,
+      "VIX_class": "Low",
+      "HYIG_class": "Easy",
+      "Quadrant": "Low_Easy",
+      "QuadrantLabel": "Low VIX, Easy credit"
+    }
+  ],
+  "indicators_monthly": [
+    {
+      "date": "1998-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.470000000000001
+    },
+    {
+      "date": "1999-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.44
+    },
+    {
+      "date": "1999-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.12
+    },
+    {
+      "date": "1999-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.12
+    },
+    {
+      "date": "1999-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.69
+    },
+    {
+      "date": "1999-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.66
+    },
+    {
+      "date": "1999-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.72
+    },
+    {
+      "date": "1999-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.45
+    },
+    {
+      "date": "1999-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.62
+    },
+    {
+      "date": "1999-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.86
+    },
+    {
+      "date": "1999-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.96
+    },
+    {
+      "date": "1999-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.74
+    },
+    {
+      "date": "1999-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.6
+    },
+    {
+      "date": "2000-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.65
+    },
+    {
+      "date": "2000-02-29",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.79
+    },
+    {
+      "date": "2000-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.27
+    },
+    {
+      "date": "2000-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.27
+    },
+    {
+      "date": "2000-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.390000000000001
+    },
+    {
+      "date": "2000-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.46
+    },
+    {
+      "date": "2000-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.57
+    },
+    {
+      "date": "2000-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.71
+    },
+    {
+      "date": "2000-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.109999999999999
+    },
+    {
+      "date": "2000-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.9
+    },
+    {
+      "date": "2000-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.07
+    },
+    {
+      "date": "2000-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.140000000000001
+    },
+    {
+      "date": "2001-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.11
+    },
+    {
+      "date": "2001-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.890000000000001
+    },
+    {
+      "date": "2001-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.41
+    },
+    {
+      "date": "2001-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.430000000000001
+    },
+    {
+      "date": "2001-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.13
+    },
+    {
+      "date": "2001-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.61
+    },
+    {
+      "date": "2001-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.77
+    },
+    {
+      "date": "2001-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.5200000000000005
+    },
+    {
+      "date": "2001-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 8.33
+    },
+    {
+      "date": "2001-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.68
+    },
+    {
+      "date": "2001-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.680000000000001
+    },
+    {
+      "date": "2001-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.59
+    },
+    {
+      "date": "2002-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.18
+    },
+    {
+      "date": "2002-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.379999999999999
+    },
+    {
+      "date": "2002-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.37
+    },
+    {
+      "date": "2002-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.0
+    },
+    {
+      "date": "2002-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.66
+    },
+    {
+      "date": "2002-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.88
+    },
+    {
+      "date": "2002-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.440000000000001
+    },
+    {
+      "date": "2002-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.389999999999999
+    },
+    {
+      "date": "2002-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.96
+    },
+    {
+      "date": "2002-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 8.129999999999999
+    },
+    {
+      "date": "2002-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.85
+    },
+    {
+      "date": "2002-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 7.0200000000000005
+    },
+    {
+      "date": "2003-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.549999999999999
+    },
+    {
+      "date": "2003-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.720000000000001
+    },
+    {
+      "date": "2003-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 6.14
+    },
+    {
+      "date": "2003-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.1000000000000005
+    },
+    {
+      "date": "2003-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 5.47
+    },
+    {
+      "date": "2003-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.9
+    },
+    {
+      "date": "2003-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.48
+    },
+    {
+      "date": "2003-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.28
+    },
+    {
+      "date": "2003-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 4.38
+    },
+    {
+      "date": "2003-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.6800000000000006
+    },
+    {
+      "date": "2003-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.4700000000000006
+    },
+    {
+      "date": "2003-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.2299999999999995
+    },
+    {
+      "date": "2004-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.12
+    },
+    {
+      "date": "2004-02-29",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.38
+    },
+    {
+      "date": "2004-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.45
+    },
+    {
+      "date": "2004-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.0
+    },
+    {
+      "date": "2004-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.3000000000000003
+    },
+    {
+      "date": "2004-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.1099999999999994
+    },
+    {
+      "date": "2004-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.06
+    },
+    {
+      "date": "2004-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.1099999999999994
+    },
+    {
+      "date": "2004-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.91
+    },
+    {
+      "date": "2004-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.72
+    },
+    {
+      "date": "2004-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.31
+    },
+    {
+      "date": "2004-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.27
+    },
+    {
+      "date": "2005-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.44
+    },
+    {
+      "date": "2005-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.02
+    },
+    {
+      "date": "2005-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.59
+    },
+    {
+      "date": "2005-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.1700000000000004
+    },
+    {
+      "date": "2005-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.16
+    },
+    {
+      "date": "2005-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.9000000000000004
+    },
+    {
+      "date": "2005-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.42
+    },
+    {
+      "date": "2005-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.78
+    },
+    {
+      "date": "2005-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.65
+    },
+    {
+      "date": "2005-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.69
+    },
+    {
+      "date": "2005-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.7
+    },
+    {
+      "date": "2005-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.79
+    },
+    {
+      "date": "2006-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.52
+    },
+    {
+      "date": "2006-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.47
+    },
+    {
+      "date": "2006-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.23
+    },
+    {
+      "date": "2006-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.15
+    },
+    {
+      "date": "2006-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.2
+    },
+    {
+      "date": "2006-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.38
+    },
+    {
+      "date": "2006-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.47
+    },
+    {
+      "date": "2006-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.5200000000000005
+    },
+    {
+      "date": "2006-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.46
+    },
+    {
+      "date": "2006-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.34
+    },
+    {
+      "date": "2006-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.26
+    },
+    {
+      "date": "2006-12-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.98
+    },
+    {
+      "date": "2007-01-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.83
+    },
+    {
+      "date": "2007-02-28",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.92
+    },
+    {
+      "date": "2007-03-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.9
+    },
+    {
+      "date": "2007-04-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.8000000000000005
+    },
+    {
+      "date": "2007-05-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.52
+    },
+    {
+      "date": "2007-06-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 1.98
+    },
+    {
+      "date": "2007-07-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.9000000000000004
+    },
+    {
+      "date": "2007-08-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.1
+    },
+    {
+      "date": "2007-09-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.71
+    },
+    {
+      "date": "2007-10-31",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 2.8600000000000003
+    },
+    {
+      "date": "2007-11-30",
+      "VIX_RATIO": NaN,
+      "HY_IG_SPREAD": 3.79
+    },
+    {
+      "date": "2007-12-31",
+      "VIX_RATIO": 0.9652509652509652,
+      "HY_IG_SPREAD": 3.89
+    },
+    {
+      "date": "2008-01-31",
+      "VIX_RATIO": 1.0392701309004362,
+      "HY_IG_SPREAD": 4.65
+    },
+    {
+      "date": "2008-02-29",
+      "VIX_RATIO": 1.0056839712012124,
+      "HY_IG_SPREAD": 5.15
+    },
+    {
+      "date": "2008-03-31",
+      "VIX_RATIO": 0.9988299531981278,
+      "HY_IG_SPREAD": 5.210000000000001
+    },
+    {
+      "date": "2008-04-30",
+      "VIX_RATIO": 0.9783529411764704,
+      "HY_IG_SPREAD": 4.26
+    },
+    {
+      "date": "2008-05-31",
+      "VIX_RATIO": 0.8684851436921577,
+      "HY_IG_SPREAD": 4.050000000000001
+    },
+    {
+      "date": "2008-06-30",
+      "VIX_RATIO": 1.0075725704669751,
+      "HY_IG_SPREAD": 4.609999999999999
+    },
+    {
+      "date": "2008-07-31",
+      "VIX_RATIO": 1.011910013233348,
+      "HY_IG_SPREAD": 5.0
+    },
+    {
+      "date": "2008-08-31",
+      "VIX_RATIO": 0.91696269982238,
+      "HY_IG_SPREAD": 5.19
+    },
+    {
+      "date": "2008-09-30",
+      "VIX_RATIO": 1.192552225249773,
+      "HY_IG_SPREAD": 6.410000000000001
+    },
+    {
+      "date": "2008-10-31",
+      "VIX_RATIO": 1.117976479372783,
+      "HY_IG_SPREAD": 10.110000000000005
+    },
+    {
+      "date": "2008-11-30",
+      "VIX_RATIO": 1.030638612033961,
+      "HY_IG_SPREAD": 13.47
+    },
+    {
+      "date": "2008-12-31",
+      "VIX_RATIO": 0.9263547938860583,
+      "HY_IG_SPREAD": 12.080000000000002
+    },
+    {
+      "date": "2009-01-31",
+      "VIX_RATIO": 1.0053811659192826,
+      "HY_IG_SPREAD": 10.950000000000005
+    },
+    {
+      "date": "2009-02-28",
+      "VIX_RATIO": 1.0252156602521567,
+      "HY_IG_SPREAD": 11.9
+    },
+    {
+      "date": "2009-03-31",
+      "VIX_RATIO": 0.9899080511325408,
+      "HY_IG_SPREAD": 11.170000000000002
+    },
+    {
+      "date": "2009-04-30",
+      "VIX_RATIO": 0.9937380887557856,
+      "HY_IG_SPREAD": 8.579999999999998
+    },
+    {
+      "date": "2009-05-31",
+      "VIX_RATIO": 0.9503779165297404,
+      "HY_IG_SPREAD": 7.829999999999999
+    },
+    {
+      "date": "2009-06-30",
+      "VIX_RATIO": 0.9162030598052852,
+      "HY_IG_SPREAD": 7.24
+    },
+    {
+      "date": "2009-07-31",
+      "VIX_RATIO": 0.9126760563380284,
+      "HY_IG_SPREAD": 6.49
+    },
+    {
+      "date": "2009-08-31",
+      "VIX_RATIO": 0.8916695234830305,
+      "HY_IG_SPREAD": 6.59
+    },
+    {
+      "date": "2009-09-30",
+      "VIX_RATIO": 0.9606151537884472,
+      "HY_IG_SPREAD": 5.58
+    },
+    {
+      "date": "2009-10-31",
+      "VIX_RATIO": 1.0557275541795663,
+      "HY_IG_SPREAD": 5.42
+    },
+    {
+      "date": "2009-11-30",
+      "VIX_RATIO": 0.9340701219512196,
+      "HY_IG_SPREAD": 5.44
+    },
+    {
+      "date": "2009-12-31",
+      "VIX_RATIO": 0.9074926747593136,
+      "HY_IG_SPREAD": 4.49
+    },
+    {
+      "date": "2010-01-31",
+      "VIX_RATIO": 0.9700551615445232,
+      "HY_IG_SPREAD": 4.73
+    },
+    {
+      "date": "2010-02-28",
+      "VIX_RATIO": 0.9006928406466513,
+      "HY_IG_SPREAD": 4.859999999999999
+    },
+    {
+      "date": "2010-03-31",
+      "VIX_RATIO": 0.8830321285140561,
+      "HY_IG_SPREAD": 4.23
+    },
+    {
+      "date": "2010-04-30",
+      "VIX_RATIO": 0.9315589353612168,
+      "HY_IG_SPREAD": 4.0600000000000005
+    },
+    {
+      "date": "2010-05-31",
+      "VIX_RATIO": 1.0021875,
+      "HY_IG_SPREAD": 4.960000000000001
+    },
+    {
+      "date": "2010-06-30",
+      "VIX_RATIO": 0.9804144195288108,
+      "HY_IG_SPREAD": 5.04
+    },
+    {
+      "date": "2010-07-31",
+      "VIX_RATIO": 0.8658806190125277,
+      "HY_IG_SPREAD": 4.7
+    },
+    {
+      "date": "2010-08-31",
+      "VIX_RATIO": 0.897038567493113,
+      "HY_IG_SPREAD": 4.97
+    },
+    {
+      "date": "2010-09-30",
+      "VIX_RATIO": 0.8977272727272727,
+      "HY_IG_SPREAD": 4.42
+    },
+    {
+      "date": "2010-10-31",
+      "VIX_RATIO": 0.9237472766884532,
+      "HY_IG_SPREAD": 4.16
+    },
+    {
+      "date": "2010-11-30",
+      "VIX_RATIO": 0.9344978165938864,
+      "HY_IG_SPREAD": 4.4
+    },
+    {
+      "date": "2010-12-31",
+      "VIX_RATIO": 0.8492822966507177,
+      "HY_IG_SPREAD": 3.75
+    },
+    {
+      "date": "2011-01-31",
+      "VIX_RATIO": 0.9692307692307692,
+      "HY_IG_SPREAD": 3.46
+    },
+    {
+      "date": "2011-02-28",
+      "VIX_RATIO": 0.9175,
+      "HY_IG_SPREAD": 3.2700000000000005
+    },
+    {
+      "date": "2011-03-31",
+      "VIX_RATIO": 0.8941532258064515,
+      "HY_IG_SPREAD": 3.27
+    },
+    {
+      "date": "2011-04-30",
+      "VIX_RATIO": 0.8428571428571429,
+      "HY_IG_SPREAD": 3.29
+    },
+    {
+      "date": "2011-05-31",
+      "VIX_RATIO": 0.8798405466970387,
+      "HY_IG_SPREAD": 3.53
+    },
+    {
+      "date": "2011-06-30",
+      "VIX_RATIO": 0.8736118455843469,
+      "HY_IG_SPREAD": 3.78
+    },
+    {
+      "date": "2011-07-31",
+      "VIX_RATIO": 1.1021388040157136,
+      "HY_IG_SPREAD": 3.92
+    },
+    {
+      "date": "2011-08-31",
+      "VIX_RATIO": 0.9984212188190716,
+      "HY_IG_SPREAD": 5.09
+    },
+    {
+      "date": "2011-09-30",
+      "VIX_RATIO": 1.041707080504365,
+      "HY_IG_SPREAD": 5.84
+    },
+    {
+      "date": "2011-10-31",
+      "VIX_RATIO": 0.986499835363846,
+      "HY_IG_SPREAD": 4.85
+    },
+    {
+      "date": "2011-11-30",
+      "VIX_RATIO": 0.9090909090909092,
+      "HY_IG_SPREAD": 5.13
+    },
+    {
+      "date": "2011-12-31",
+      "VIX_RATIO": 0.8711839166046165,
+      "HY_IG_SPREAD": 4.66
+    },
+    {
+      "date": "2012-01-31",
+      "VIX_RATIO": 0.8800362154821186,
+      "HY_IG_SPREAD": 4.32
+    },
+    {
+      "date": "2012-02-29",
+      "VIX_RATIO": 0.8454128440366973,
+      "HY_IG_SPREAD": 3.9500000000000006
+    },
+    {
+      "date": "2012-03-31",
+      "VIX_RATIO": 0.8328855454056959,
+      "HY_IG_SPREAD": 4.07
+    },
+    {
+      "date": "2012-04-30",
+      "VIX_RATIO": 0.8876811594202898,
+      "HY_IG_SPREAD": 4.01
+    },
+    {
+      "date": "2012-05-31",
+      "VIX_RATIO": 0.9176201372997712,
+      "HY_IG_SPREAD": 4.67
+    },
+    {
+      "date": "2012-06-30",
+      "VIX_RATIO": 0.8405511811023622,
+      "HY_IG_SPREAD": 4.290000000000001
+    },
+    {
+      "date": "2012-07-31",
+      "VIX_RATIO": 0.9109720885466794,
+      "HY_IG_SPREAD": 4.220000000000001
+    },
+    {
+      "date": "2012-08-31",
+      "VIX_RATIO": 0.8472356935014548,
+      "HY_IG_SPREAD": 4.12
+    },
+    {
+      "date": "2012-09-30",
+      "VIX_RATIO": 0.8932424758659853,
+      "HY_IG_SPREAD": 4.050000000000001
+    },
+    {
+      "date": "2012-10-31",
+      "VIX_RATIO": 0.9632314862765408,
+      "HY_IG_SPREAD": 4.12
+    },
+    {
+      "date": "2012-11-30",
+      "VIX_RATIO": 0.9189345686160972,
+      "HY_IG_SPREAD": 4.050000000000001
+    },
+    {
+      "date": "2012-12-31",
+      "VIX_RATIO": 0.9620928990923652,
+      "HY_IG_SPREAD": 3.8
+    },
+    {
+      "date": "2013-01-31",
+      "VIX_RATIO": 0.9183279742765272,
+      "HY_IG_SPREAD": 3.47
+    },
+    {
+      "date": "2013-02-28",
+      "VIX_RATIO": 0.9585908529048208,
+      "HY_IG_SPREAD": 3.49
+    },
+    {
+      "date": "2013-03-31",
+      "VIX_RATIO": 0.8674863387978141,
+      "HY_IG_SPREAD": 3.3500000000000005
+    },
+    {
+      "date": "2013-04-30",
+      "VIX_RATIO": 0.9147496617050068,
+      "HY_IG_SPREAD": 3.08
+    },
+    {
+      "date": "2013-05-31",
+      "VIX_RATIO": 0.9515469935785174,
+      "HY_IG_SPREAD": 3.1500000000000004
+    },
+    {
+      "date": "2013-06-30",
+      "VIX_RATIO": 0.9168026101141924,
+      "HY_IG_SPREAD": 3.54
+    },
+    {
+      "date": "2013-07-31",
+      "VIX_RATIO": 0.9014745308310992,
+      "HY_IG_SPREAD": 3.18
+    },
+    {
+      "date": "2013-08-31",
+      "VIX_RATIO": 0.942382271468144,
+      "HY_IG_SPREAD": 3.21
+    },
+    {
+      "date": "2013-09-30",
+      "VIX_RATIO": 0.988095238095238,
+      "HY_IG_SPREAD": 3.27
+    },
+    {
+      "date": "2013-10-31",
+      "VIX_RATIO": 0.9016393442622952,
+      "HY_IG_SPREAD": 2.91
+    },
+    {
+      "date": "2013-11-30",
+      "VIX_RATIO": 0.9115103127079176,
+      "HY_IG_SPREAD": 2.8599999999999994
+    },
+    {
+      "date": "2013-12-31",
+      "VIX_RATIO": 0.9289099526066352,
+      "HY_IG_SPREAD": 2.72
+    },
+    {
+      "date": "2014-01-31",
+      "VIX_RATIO": 1.0176893311221669,
+      "HY_IG_SPREAD": 2.91
+    },
+    {
+      "date": "2014-02-28",
+      "VIX_RATIO": 0.8860759493670886,
+      "HY_IG_SPREAD": 2.59
+    },
+    {
+      "date": "2014-03-31",
+      "VIX_RATIO": 0.920424403183024,
+      "HY_IG_SPREAD": 2.58
+    },
+    {
+      "date": "2014-04-30",
+      "VIX_RATIO": 0.9122448979591836,
+      "HY_IG_SPREAD": 2.5700000000000003
+    },
+    {
+      "date": "2014-05-31",
+      "VIX_RATIO": 0.8290909090909091,
+      "HY_IG_SPREAD": 2.55
+    },
+    {
+      "date": "2014-06-30",
+      "VIX_RATIO": 0.8893159108378171,
+      "HY_IG_SPREAD": 2.4399999999999995
+    },
+    {
+      "date": "2014-07-31",
+      "VIX_RATIO": 1.034798534798535,
+      "HY_IG_SPREAD": 2.94
+    },
+    {
+      "date": "2014-08-31",
+      "VIX_RATIO": 0.8395234758234058,
+      "HY_IG_SPREAD": 2.72
+    },
+    {
+      "date": "2014-09-30",
+      "VIX_RATIO": 0.9549180327868853,
+      "HY_IG_SPREAD": 3.2
+    },
+    {
+      "date": "2014-10-31",
+      "VIX_RATIO": 0.8497880072683222,
+      "HY_IG_SPREAD": 3.03
+    },
+    {
+      "date": "2014-11-30",
+      "VIX_RATIO": 0.8367859384808538,
+      "HY_IG_SPREAD": 3.32
+    },
+    {
+      "date": "2014-12-31",
+      "VIX_RATIO": 0.972644376899696,
+      "HY_IG_SPREAD": 3.6
+    },
+    {
+      "date": "2015-01-31",
+      "VIX_RATIO": 0.9610449129239228,
+      "HY_IG_SPREAD": 3.73
+    },
+    {
+      "date": "2015-02-28",
+      "VIX_RATIO": 0.7898164594434577,
+      "HY_IG_SPREAD": 3.14
+    },
+    {
+      "date": "2015-03-31",
+      "VIX_RATIO": 0.8717217787913341,
+      "HY_IG_SPREAD": 3.46
+    },
+    {
+      "date": "2015-04-30",
+      "VIX_RATIO": 0.8828883495145631,
+      "HY_IG_SPREAD": 3.25
+    },
+    {
+      "date": "2015-05-31",
+      "VIX_RATIO": 0.8998699609882964,
+      "HY_IG_SPREAD": 3.2
+    },
+    {
+      "date": "2015-06-30",
+      "VIX_RATIO": 0.9870059556036818,
+      "HY_IG_SPREAD": 3.52
+    },
+    {
+      "date": "2015-07-31",
+      "VIX_RATIO": 0.8134228187919462,
+      "HY_IG_SPREAD": 3.78
+    },
+    {
+      "date": "2015-08-31",
+      "VIX_RATIO": 1.0716170373162457,
+      "HY_IG_SPREAD": 4.01
+    },
+    {
+      "date": "2015-09-30",
+      "VIX_RATIO": 0.98989898989899,
+      "HY_IG_SPREAD": 4.84
+    },
+    {
+      "date": "2015-10-31",
+      "VIX_RATIO": 0.8190217391304349,
+      "HY_IG_SPREAD": 4.24
+    },
+    {
+      "date": "2015-11-30",
+      "VIX_RATIO": 0.8723634396971336,
+      "HY_IG_SPREAD": 4.78
+    },
+    {
+      "date": "2015-12-31",
+      "VIX_RATIO": 0.9196969696969696,
+      "HY_IG_SPREAD": 5.220000000000001
+    },
+    {
+      "date": "2016-01-31",
+      "VIX_RATIO": 0.8914386584289496,
+      "HY_IG_SPREAD": 5.75
+    },
+    {
+      "date": "2016-02-29",
+      "VIX_RATIO": 0.917820455560518,
+      "HY_IG_SPREAD": 5.7
+    },
+    {
+      "date": "2016-03-31",
+      "VIX_RATIO": 0.816744730679157,
+      "HY_IG_SPREAD": 5.35
+    },
+    {
+      "date": "2016-04-30",
+      "VIX_RATIO": 0.8509485094850948,
+      "HY_IG_SPREAD": 4.69
+    },
+    {
+      "date": "2016-05-31",
+      "VIX_RATIO": 0.8532772098616958,
+      "HY_IG_SPREAD": 4.43
+    },
+    {
+      "date": "2016-06-30",
+      "VIX_RATIO": 0.8640132669983417,
+      "HY_IG_SPREAD": 4.59
+    },
+    {
+      "date": "2016-07-31",
+      "VIX_RATIO": 0.7697795071335927,
+      "HY_IG_SPREAD": 4.19
+    },
+    {
+      "date": "2016-08-31",
+      "VIX_RATIO": 0.8314745972738538,
+      "HY_IG_SPREAD": 3.71
+    },
+    {
+      "date": "2016-09-30",
+      "VIX_RATIO": 0.8118509468540012,
+      "HY_IG_SPREAD": 3.54
+    },
+    {
+      "date": "2016-10-31",
+      "VIX_RATIO": 0.9557422969187672,
+      "HY_IG_SPREAD": 3.53
+    },
+    {
+      "date": "2016-11-30",
+      "VIX_RATIO": 0.8279503105590061,
+      "HY_IG_SPREAD": 3.31
+    },
+    {
+      "date": "2016-12-31",
+      "VIX_RATIO": 0.8488512696493349,
+      "HY_IG_SPREAD": 2.92
+    },
+    {
+      "date": "2017-01-31",
+      "VIX_RATIO": 0.8280386740331491,
+      "HY_IG_SPREAD": 2.72
+    },
+    {
+      "date": "2017-02-28",
+      "VIX_RATIO": 0.8455497382198953,
+      "HY_IG_SPREAD": 2.53
+    },
+    {
+      "date": "2017-03-31",
+      "VIX_RATIO": 0.9095588235294118,
+      "HY_IG_SPREAD": 2.68
+    },
+    {
+      "date": "2017-04-30",
+      "VIX_RATIO": 0.8368136117556072,
+      "HY_IG_SPREAD": 2.58
+    },
+    {
+      "date": "2017-05-31",
+      "VIX_RATIO": 0.8242280285035629,
+      "HY_IG_SPREAD": 2.5500000000000003
+    },
+    {
+      "date": "2017-06-30",
+      "VIX_RATIO": 0.8508371385083713,
+      "HY_IG_SPREAD": 2.62
+    },
+    {
+      "date": "2017-07-31",
+      "VIX_RATIO": 0.8227746591820368,
+      "HY_IG_SPREAD": 2.52
+    },
+    {
+      "date": "2017-08-31",
+      "VIX_RATIO": 0.767391304347826,
+      "HY_IG_SPREAD": 2.6900000000000004
+    },
+    {
+      "date": "2017-09-30",
+      "VIX_RATIO": 0.7614091273018414,
+      "HY_IG_SPREAD": 2.49
+    },
+    {
+      "date": "2017-10-31",
+      "VIX_RATIO": 0.8222940226171244,
+      "HY_IG_SPREAD": 2.5
+    },
+    {
+      "date": "2017-11-30",
+      "VIX_RATIO": 0.8650306748466258,
+      "HY_IG_SPREAD": 2.58
+    },
+    {
+      "date": "2017-12-31",
+      "VIX_RATIO": 0.8433919022154316,
+      "HY_IG_SPREAD": 2.64
+    },
+    {
+      "date": "2018-01-31",
+      "VIX_RATIO": 0.9087248322147652,
+      "HY_IG_SPREAD": 2.38
+    },
+    {
+      "date": "2018-02-28",
+      "VIX_RATIO": 0.9979889391654098,
+      "HY_IG_SPREAD": 2.46
+    },
+    {
+      "date": "2018-03-31",
+      "VIX_RATIO": 0.9717761557177614,
+      "HY_IG_SPREAD": 2.5500000000000003
+    },
+    {
+      "date": "2018-04-30",
+      "VIX_RATIO": 0.9186851211072664,
+      "HY_IG_SPREAD": 2.3200000000000003
+    },
+    {
+      "date": "2018-05-31",
+      "VIX_RATIO": 0.9448867115737908,
+      "HY_IG_SPREAD": 2.41
+    },
+    {
+      "date": "2018-06-30",
+      "VIX_RATIO": 0.938739789964994,
+      "HY_IG_SPREAD": 2.41
+    },
+    {
+      "date": "2018-07-31",
+      "VIX_RATIO": 0.8628110289172831,
+      "HY_IG_SPREAD": 2.3
+    },
+    {
+      "date": "2018-08-31",
+      "VIX_RATIO": 0.8488448844884487,
+      "HY_IG_SPREAD": 2.28
+    },
+    {
+      "date": "2018-09-30",
+      "VIX_RATIO": 0.8205822613405551,
+      "HY_IG_SPREAD": 2.15
+    },
+    {
+      "date": "2018-10-31",
+      "VIX_RATIO": 1.0037825059101655,
+      "HY_IG_SPREAD": 2.56
+    },
+    {
+      "date": "2018-11-30",
+      "VIX_RATIO": 0.9565907887771308,
+      "HY_IG_SPREAD": 2.84
+    },
+    {
+      "date": "2018-12-31",
+      "VIX_RATIO": 1.0712178676780448,
+      "HY_IG_SPREAD": 3.74
+    },
+    {
+      "date": "2019-01-31",
+      "VIX_RATIO": 0.9267337807606264,
+      "HY_IG_SPREAD": 2.99
+    },
+    {
+      "date": "2019-02-28",
+      "VIX_RATIO": 0.9180124223602484,
+      "HY_IG_SPREAD": 2.63
+    },
+    {
+      "date": "2019-03-31",
+      "VIX_RATIO": 0.8677215189873417,
+      "HY_IG_SPREAD": 2.78
+    },
+    {
+      "date": "2019-04-30",
+      "VIX_RATIO": 0.861457649376231,
+      "HY_IG_SPREAD": 2.56
+    },
+    {
+      "date": "2019-05-31",
+      "VIX_RATIO": 0.9936271906532133,
+      "HY_IG_SPREAD": 3.24
+    },
+    {
+      "date": "2019-06-30",
+      "VIX_RATIO": 0.9389788293897884,
+      "HY_IG_SPREAD": 2.8500000000000005
+    },
+    {
+      "date": "2019-07-31",
+      "VIX_RATIO": 0.9532820816085156,
+      "HY_IG_SPREAD": 2.79
+    },
+    {
+      "date": "2019-08-31",
+      "VIX_RATIO": 0.9713408393039918,
+      "HY_IG_SPREAD": 2.87
+    },
+    {
+      "date": "2019-09-30",
+      "VIX_RATIO": 0.9042316258351892,
+      "HY_IG_SPREAD": 2.8
+    },
+    {
+      "date": "2019-10-31",
+      "VIX_RATIO": 0.8236760124610591,
+      "HY_IG_SPREAD": 2.9800000000000004
+    },
+    {
+      "date": "2019-11-30",
+      "VIX_RATIO": 0.8136686009026434,
+      "HY_IG_SPREAD": 2.9099999999999997
+    },
+    {
+      "date": "2019-12-31",
+      "VIX_RATIO": 0.8683049779458097,
+      "HY_IG_SPREAD": 2.59
+    },
+    {
+      "date": "2020-01-31",
+      "VIX_RATIO": 1.0112721417069244,
+      "HY_IG_SPREAD": 2.9400000000000004
+    },
+    {
+      "date": "2020-02-29",
+      "VIX_RATIO": 1.343718592964824,
+      "HY_IG_SPREAD": 3.76
+    },
+    {
+      "date": "2020-03-31",
+      "VIX_RATIO": 1.1080298013245031,
+      "HY_IG_SPREAD": 5.72
+    },
+    {
+      "date": "2020-04-30",
+      "VIX_RATIO": 0.9743223965763196,
+      "HY_IG_SPREAD": 5.46
+    },
+    {
+      "date": "2020-05-31",
+      "VIX_RATIO": 0.908820614469772,
+      "HY_IG_SPREAD": 4.67
+    },
+    {
+      "date": "2020-06-30",
+      "VIX_RATIO": 0.9357318573185732,
+      "HY_IG_SPREAD": 4.84
+    },
+    {
+      "date": "2020-07-31",
+      "VIX_RATIO": 0.8232918209357118,
+      "HY_IG_SPREAD": 3.75
+    },
+    {
+      "date": "2020-08-31",
+      "VIX_RATIO": 0.8291993720565148,
+      "HY_IG_SPREAD": 3.6599999999999993
+    },
+    {
+      "date": "2020-09-30",
+      "VIX_RATIO": 0.8334386852085968,
+      "HY_IG_SPREAD": 3.97
+    },
+    {
+      "date": "2020-10-31",
+      "VIX_RATIO": 1.0482492417976288,
+      "HY_IG_SPREAD": 3.98
+    },
+    {
+      "date": "2020-11-30",
+      "VIX_RATIO": 0.8454582819564325,
+      "HY_IG_SPREAD": 3.21
+    },
+    {
+      "date": "2020-12-31",
+      "VIX_RATIO": 0.8999208860759493,
+      "HY_IG_SPREAD": 2.83
+    },
+    {
+      "date": "2021-01-31",
+      "VIX_RATIO": 0.9766824085005904,
+      "HY_IG_SPREAD": 2.81
+    },
+    {
+      "date": "2021-02-28",
+      "VIX_RATIO": 0.9442567567567568,
+      "HY_IG_SPREAD": 2.62
+    },
+    {
+      "date": "2021-03-31",
+      "VIX_RATIO": 0.8758465011286681,
+      "HY_IG_SPREAD": 2.39
+    },
+    {
+      "date": "2021-04-30",
+      "VIX_RATIO": 0.8432260987766198,
+      "HY_IG_SPREAD": 2.34
+    },
+    {
+      "date": "2021-05-31",
+      "VIX_RATIO": 0.8183593750000001,
+      "HY_IG_SPREAD": 2.43
+    },
+    {
+      "date": "2021-06-30",
+      "VIX_RATIO": 0.8113787801127627,
+      "HY_IG_SPREAD": 2.18
+    },
+    {
+      "date": "2021-07-31",
+      "VIX_RATIO": 0.8223624887285842,
+      "HY_IG_SPREAD": 2.4
+    },
+    {
+      "date": "2021-08-31",
+      "VIX_RATIO": 0.8070519098922624,
+      "HY_IG_SPREAD": 2.29
+    },
+    {
+      "date": "2021-09-30",
+      "VIX_RATIO": 0.9694176790950984,
+      "HY_IG_SPREAD": 2.26
+    },
+    {
+      "date": "2021-10-31",
+      "VIX_RATIO": 0.7982326951399117,
+      "HY_IG_SPREAD": 2.26
+    },
+    {
+      "date": "2021-11-30",
+      "VIX_RATIO": 0.9665837184500534,
+      "HY_IG_SPREAD": 2.64
+    },
+    {
+      "date": "2021-12-31",
+      "VIX_RATIO": 0.7870201096892139,
+      "HY_IG_SPREAD": 2.12
+    },
+    {
+      "date": "2022-01-31",
+      "VIX_RATIO": 0.9247672253258844,
+      "HY_IG_SPREAD": 2.53
+    },
+    {
+      "date": "2022-02-28",
+      "VIX_RATIO": 1.0168634064080944,
+      "HY_IG_SPREAD": 2.47
+    },
+    {
+      "date": "2022-03-31",
+      "VIX_RATIO": 0.8405560098119378,
+      "HY_IG_SPREAD": 2.21
+    },
+    {
+      "date": "2022-04-30",
+      "VIX_RATIO": 1.0066305003013862,
+      "HY_IG_SPREAD": 2.5600000000000005
+    },
+    {
+      "date": "2022-05-31",
+      "VIX_RATIO": 0.9356913183279744,
+      "HY_IG_SPREAD": 2.82
+    },
+    {
+      "date": "2022-06-30",
+      "VIX_RATIO": 0.96634129922585,
+      "HY_IG_SPREAD": 4.23
+    },
+    {
+      "date": "2022-07-31",
+      "VIX_RATIO": 0.8965952080706179,
+      "HY_IG_SPREAD": 3.3
+    },
+    {
+      "date": "2022-08-31",
+      "VIX_RATIO": 0.9707317073170731,
+      "HY_IG_SPREAD": 3.5500000000000003
+    },
+    {
+      "date": "2022-09-30",
+      "VIX_RATIO": 0.992467043314501,
+      "HY_IG_SPREAD": 3.76
+    },
+    {
+      "date": "2022-10-31",
+      "VIX_RATIO": 0.9613670133729568,
+      "HY_IG_SPREAD": 2.97
+    },
+    {
+      "date": "2022-11-30",
+      "VIX_RATIO": 0.8746281342966424,
+      "HY_IG_SPREAD": 3.13
+    },
+    {
+      "date": "2022-12-31",
+      "VIX_RATIO": 0.8921366817620421,
+      "HY_IG_SPREAD": 3.43
+    },
+    {
+      "date": "2023-01-31",
+      "VIX_RATIO": 0.932244113407016,
+      "HY_IG_SPREAD": 3.05
+    },
+    {
+      "date": "2023-02-28",
+      "VIX_RATIO": 0.9709193245778612,
+      "HY_IG_SPREAD": 2.92
+    },
+    {
+      "date": "2023-03-31",
+      "VIX_RATIO": 0.8808290155440414,
+      "HY_IG_SPREAD": 3.13
+    },
+    {
+      "date": "2023-04-30",
+      "VIX_RATIO": 0.8075742067553736,
+      "HY_IG_SPREAD": 3.12
+    },
+    {
+      "date": "2023-05-31",
+      "VIX_RATIO": 0.8876793666501732,
+      "HY_IG_SPREAD": 3.2700000000000005
+    },
+    {
+      "date": "2023-06-30",
+      "VIX_RATIO": 0.848314606741573,
+      "HY_IG_SPREAD": 2.75
+    },
+    {
+      "date": "2023-07-31",
+      "VIX_RATIO": 0.8513429106808245,
+      "HY_IG_SPREAD": 2.6
+    },
+    {
+      "date": "2023-08-31",
+      "VIX_RATIO": 0.8523869346733669,
+      "HY_IG_SPREAD": 2.63
+    },
+    {
+      "date": "2023-09-30",
+      "VIX_RATIO": 0.946515397082658,
+      "HY_IG_SPREAD": 2.78
+    },
+    {
+      "date": "2023-10-31",
+      "VIX_RATIO": 0.930733709594664,
+      "HY_IG_SPREAD": 3.1
+    },
+    {
+      "date": "2023-11-30",
+      "VIX_RATIO": 0.8367875647668394,
+      "HY_IG_SPREAD": 2.7299999999999995
+    },
+    {
+      "date": "2023-12-31",
+      "VIX_RATIO": 0.8158584534731324,
+      "HY_IG_SPREAD": 2.35
+    },
+    {
+      "date": "2024-01-31",
+      "VIX_RATIO": 0.8991228070175438,
+      "HY_IG_SPREAD": 2.57
+    },
+    {
+      "date": "2024-02-29",
+      "VIX_RATIO": 0.8975217682518419,
+      "HY_IG_SPREAD": 2.29
+    },
+    {
+      "date": "2024-03-31",
+      "VIX_RATIO": 0.8564845292955893,
+      "HY_IG_SPREAD": 2.21
+    },
+    {
+      "date": "2024-04-30",
+      "VIX_RATIO": 0.94333936106088,
+      "HY_IG_SPREAD": 2.27
+    },
+    {
+      "date": "2024-05-31",
+      "VIX_RATIO": 0.8813096862210096,
+      "HY_IG_SPREAD": 2.3200000000000003
+    },
+    {
+      "date": "2024-06-30",
+      "VIX_RATIO": 0.8567493112947658,
+      "HY_IG_SPREAD": 2.25
+    },
+    {
+      "date": "2024-07-31",
+      "VIX_RATIO": 0.9640542133176192,
+      "HY_IG_SPREAD": 2.28
+    },
+    {
+      "date": "2024-08-31",
+      "VIX_RATIO": 0.8605851979345955,
+      "HY_IG_SPREAD": 2.21
+    },
+    {
+      "date": "2024-09-30",
+      "VIX_RATIO": 0.8704474505723205,
+      "HY_IG_SPREAD": 2.11
+    },
+    {
+      "date": "2024-10-31",
+      "VIX_RATIO": 1.0229681978798586,
+      "HY_IG_SPREAD": 2.02
+    },
+    {
+      "date": "2024-11-30",
+      "VIX_RATIO": 0.8308733087330873,
+      "HY_IG_SPREAD": 1.91
+    },
+    {
+      "date": "2024-12-31",
+      "VIX_RATIO": 0.9141201264488936,
+      "HY_IG_SPREAD": 2.1
+    },
+    {
+      "date": "2025-01-31",
+      "VIX_RATIO": 0.8914812805208898,
+      "HY_IG_SPREAD": 1.8600000000000003
+    },
+    {
+      "date": "2025-02-28",
+      "VIX_RATIO": 0.9727452923686818,
+      "HY_IG_SPREAD": 1.99
+    },
+    {
+      "date": "2025-03-31",
+      "VIX_RATIO": 1.0141101502048249,
+      "HY_IG_SPREAD": 2.58
+    },
+    {
+      "date": "2025-04-30",
+      "VIX_RATIO": 0.9671104150352388,
+      "HY_IG_SPREAD": 2.85
+    },
+    {
+      "date": "2025-05-31",
+      "VIX_RATIO": 0.8685687558465857,
+      "HY_IG_SPREAD": 2.4
+    },
+    {
+      "date": "2025-06-30",
+      "VIX_RATIO": 0.86059670781893,
+      "HY_IG_SPREAD": 2.1
+    },
+    {
+      "date": "2025-07-31",
+      "VIX_RATIO": 0.8735632183908045,
+      "HY_IG_SPREAD": 2.07
+    },
+    {
+      "date": "2025-08-31",
+      "VIX_RATIO": 0.8370572207084468,
+      "HY_IG_SPREAD": 2.03
+    },
+    {
+      "date": "2025-09-30",
+      "VIX_RATIO": 0.8673415023974428,
+      "HY_IG_SPREAD": 2.04
+    },
+    {
+      "date": "2025-10-31",
+      "VIX_RATIO": 0.8511469009272817,
+      "HY_IG_SPREAD": 2.14
+    },
+    {
+      "date": "2025-11-30",
+      "VIX_RATIO": 0.8324847250509165,
+      "HY_IG_SPREAD": 2.1
+    },
+    {
+      "date": "2025-12-31",
+      "VIX_RATIO": 0.8223322332233223,
+      "HY_IG_SPREAD": 2.02
+    }
+  ],
   "current_regime": {
     "date": "2025-12-31",
-    "VIX_ratio": 0.95,
-    "HY_IG_spread": 3.5,
+    "VIX_ratio": 0.8223322332233223,
+    "HY_IG_spread": 2.02,
     "VIX_class": "Low",
     "HYIG_class": "Easy",
     "Quadrant": "Low_Easy",
     "QuadrantLabel": "Stable expansion (Risk-on)",
-    "threshold_VIX_median": 1.0,
-    "threshold_HY_IG_median": 4.0
+    "threshold_VIX_median": 0.8810693508825255,
+    "threshold_HY_IG_median": 2.4
   }
 }
