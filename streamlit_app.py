@@ -204,6 +204,74 @@ def main():
         | High VIX, Tight credit | Structural stress | Capital preservation |
         """)
 
+        # Clock location: X (VIX ratio) vs Y (HY–IG spread) — current + past 3 quarter-ends
+        st.subheader("Clock location (X vs Y)")
+        if ind is not None and not ind.empty:
+            ind_clean = ind[["VIX_RATIO", "HY_IG_SPREAD"]].dropna()
+            if not ind_clean.empty:
+                # Last 4 quarter-ends: current (e.g. 2025-12-31), past 1 (2025-09-30), past 2 (2025-06-30), past 3 (2025-03-31)
+                ind_q = ind_clean.resample("QE").last()
+                pts = ind_q.tail(4)
+                if len(pts) >= 1:
+                    vix_med = cur.get("threshold_VIX_median") or pts["VIX_RATIO"].median()
+                    hyig_med = cur.get("threshold_HY_IG_median") or pts["HY_IG_SPREAD"].median()
+                    fig_clock = go.Figure()
+                    # Quadrant divider lines (median thresholds)
+                    x_range = [pts["VIX_RATIO"].min() - 0.05, pts["VIX_RATIO"].max() + 0.05]
+                    y_range = [pts["HY_IG_SPREAD"].min() - 10, pts["HY_IG_SPREAD"].max() + 10]
+                    fig_clock.add_vline(x=float(vix_med), line_dash="dot", line_color="gray", opacity=0.7)
+                    fig_clock.add_hline(y=float(hyig_med), line_dash="dot", line_color="gray", opacity=0.7)
+                    # Labels for the 4 points (newest first: Current, then past 3 quarters)
+                    labels = []
+                    for i, (ts, row) in enumerate(pts.iloc[::-1].iterrows()):
+                        if hasattr(ts, "strftime"):
+                            lbl = ts.strftime("%Y-%m-%d")
+                        else:
+                            lbl = str(ts)[:10]
+                        if i == 0:
+                            labels.append(f"Current ({lbl})")
+                        else:
+                            labels.append(f"Past {i} ({lbl})")
+                    # Scatter: past 3 (smaller) then current (larger, bold)
+                    for i in range(len(pts)):
+                        idx = len(pts) - 1 - i  # 0 = oldest, 3 = current
+                        ts = pts.index[idx]
+                        x_val = pts.iloc[idx]["VIX_RATIO"]
+                        y_val = pts.iloc[idx]["HY_IG_SPREAD"]
+                        is_current = idx == len(pts) - 1
+                        fig_clock.add_trace(go.Scatter(
+                            x=[x_val],
+                            y=[y_val],
+                            mode="markers+text",
+                            name=labels[i],
+                            text=labels[i],
+                            textposition="top center",
+                            marker=dict(
+                                size=18 if is_current else 12,
+                                color="#764ba2" if is_current else "#667eea",
+                                symbol="diamond" if is_current else "circle",
+                                line=dict(width=2, color="white"),
+                            ),
+                            textfont=dict(size=11 if is_current else 10),
+                        ))
+                    fig_clock.update_layout(
+                        title="Current and past 3 quarter-ends on the AIG Investment Clock",
+                        xaxis_title="X: VIX 1M/3M ratio (Stress horizon)",
+                        yaxis_title="Y: HY–IG spread (bps) (Credit stress)",
+                        height=500,
+                        showlegend=True,
+                        legend=dict(orientation="h", yanchor="bottom", y=1.02),
+                        xaxis=dict(range=x_range),
+                        yaxis=dict(range=y_range),
+                    )
+                    st.plotly_chart(fig_clock, use_container_width=True)
+                else:
+                    st.caption("Not enough quarter-end data to plot. Need at least one quarter.")
+            else:
+                st.caption("No indicator data available for clock location.")
+        else:
+            st.caption("Load *indicators_monthly.csv* (run *fetch_data.py*) to see clock location and past quarters.")
+
         if ind is not None and not ind.empty:
             st.subheader("X & Y over time (monthly)")
             ind_m = ind[["VIX_RATIO", "HY_IG_SPREAD"]].dropna()
