@@ -152,8 +152,28 @@ def main():
                 return "—"
             return f"{round(val * 100, 2)}%" if as_pct else round(val * 100, 2)
 
-        # Monthly by quadrant: table of avg return, avg drawdown, and max drawdown (if present)
+        def _favorite_unfavorite_quadrant(quad_list):
+            """Return (favorite_quadrant, unfavorite_quadrant) by average return across sectors."""
+            means = {}
+            for item in quad_list:
+                r = item.get("avg_return") or {}
+                if r:
+                    means[item["quadrant"]] = sum(r.values()) / len(r)
+            if not means:
+                return "—", "—"
+            return max(means, key=means.get), min(means, key=means.get)
+
+        fav_quad_m, unfav_quad_m = _favorite_unfavorite_quadrant(monthly_quad)
+        fav_quad_q, unfav_quad_q = _favorite_unfavorite_quadrant(quarterly_quad_source)
+
+        # Periods table (repeat after Part 1 and Part 2 titles)
+        sp_table = bt.get("sp_cycles_table") or []
+
+        # Monthly by quadrant: table with 4 extra columns (Favorite/Unfavorite ETF, Favorite/Unfavorite Quadrant)
         st.subheader("1. Monthly: Sector performance by quadrant")
+        if sp_table:
+            st.markdown("**Periods used for time slicing:**")
+            st.dataframe(pd.DataFrame(sp_table), use_container_width=True, hide_index=True)
         if selected_cycle != "Full sample":
             st.caption(f"Period: **{selected_cycle}** — months and figures below are for this cycle only.")
         for item in monthly_quad:
@@ -164,22 +184,31 @@ def main():
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
                 max_dd = item.get("max_drawdown") or {}
-                cols = {"Avg monthly return (%)": [_fmt(ret.get(t, 0)) for t in ret], "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd]}
-                if max_dd:
-                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
-                df = pd.DataFrame(cols, index=list(ret.keys()))
-                st.dataframe(df, use_container_width=True)
                 fav_q = monthly_fav.get(q, {})
+                top3 = (fav_q.get("favorite_by_return") or [])[:3]
+                bot3 = (fav_q.get("unfavorite_by_return") or [])[:3]
+                fav_etf_str = ", ".join(top3) if top3 else "—"
+                unfav_etf_str = ", ".join(bot3) if bot3 else "—"
+                sector_list = list(ret.keys())
+                cols = {
+                    "Avg monthly return (%)": [_fmt(ret.get(t, 0)) for t in sector_list],
+                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in sector_list],
+                }
+                if max_dd:
+                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in sector_list]
+                cols["Favorite ETF (Monthly)"] = [fav_etf_str] * len(sector_list)
+                cols["Unfavorite ETF (Monthly)"] = [unfav_etf_str] * len(sector_list)
+                cols["Favorite Quadrant"] = [fav_quad_m] * len(sector_list)
+                cols["Unfavorite Quadrant"] = [unfav_quad_m] * len(sector_list)
+                df = pd.DataFrame(cols, index=sector_list)
+                st.dataframe(df, use_container_width=True)
                 if fav_q:
-                    c1, c2 = st.columns(2)
-                    with c1:
-                        st.write("**Favorite by return:**", ", ".join(fav_q.get("favorite_by_return", [])))
-                        st.write("**Unfavorite by return:**", ", ".join(fav_q.get("unfavorite_by_return", [])))
-                    with c2:
-                        st.write("**Favorite by drawdown (less risk):**", ", ".join(fav_q.get("favorite_by_drawdown", [])))
-                        st.write("**Unfavorite by drawdown:**", ", ".join(fav_q.get("unfavorite_by_drawdown", [])))
+                    st.caption("**By drawdown (risk):** Favorite " + ", ".join((fav_q.get("favorite_by_drawdown") or [])[:3]) + " | Unfavorite " + ", ".join((fav_q.get("unfavorite_by_drawdown") or [])[:3]))
 
         st.subheader("2. Quarterly: Sector performance by quadrant")
+        if sp_table:
+            st.markdown("**Periods used for time slicing:**")
+            st.dataframe(pd.DataFrame(sp_table), use_container_width=True, hide_index=True)
         if selected_cycle != "Full sample":
             st.caption(f"Period: **{selected_cycle}** — quarters and figures below are for this cycle only.")
         if not quarterly_quad_source:
@@ -193,15 +222,24 @@ def main():
                 ret = item.get("avg_return") or {}
                 dd = item.get("avg_drawdown") or {}
                 max_dd = item.get("max_drawdown") or {}
-                cols = {"Avg quarterly return (%)": [_fmt(ret.get(t, 0)) for t in ret], "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in dd]}
-                if max_dd:
-                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in ret]
-                df = pd.DataFrame(cols, index=list(ret.keys()))
-                st.dataframe(df, use_container_width=True)
                 fav_q = quarterly_fav.get(q, {})
-                if fav_q:
-                    st.write("**Favorite by return:**", ", ".join(fav_q.get("favorite_by_return", [])))
-                    st.write("**Unfavorite by return:**", ", ".join(fav_q.get("unfavorite_by_return", [])))
+                top3 = (fav_q.get("favorite_by_return") or [])[:3]
+                bot3 = (fav_q.get("unfavorite_by_return") or [])[:3]
+                fav_etf_str = ", ".join(top3) if top3 else "—"
+                unfav_etf_str = ", ".join(bot3) if bot3 else "—"
+                sector_list = list(ret.keys())
+                cols = {
+                    "Avg quarterly return (%)": [_fmt(ret.get(t, 0)) for t in sector_list],
+                    "Avg drawdown (%)": [_fmt(dd.get(t, 0)) for t in sector_list],
+                }
+                if max_dd:
+                    cols["Max drawdown (%)"] = [_fmt(max_dd.get(t, 0)) for t in sector_list]
+                cols["Favorite ETF (Quarterly)"] = [fav_etf_str] * len(sector_list)
+                cols["Unfavorite ETF (Quarterly)"] = [unfav_etf_str] * len(sector_list)
+                cols["Favorite Quadrant"] = [fav_quad_q] * len(sector_list)
+                cols["Unfavorite Quadrant"] = [unfav_quad_q] * len(sector_list)
+                df = pd.DataFrame(cols, index=sector_list)
+                st.dataframe(df, use_container_width=True)
 
         # Quadrant history over time (chart) — always in an expander so section is clickable
         hist = bt.get("quadrant_history_monthly") or []
